@@ -1,5 +1,5 @@
 settings:
-  name: CHATVOICE
+  name: SAM
 
 slots:
   - nombre
@@ -8,6 +8,7 @@ slots:
   - pensamiento
   - emociones
   - acuerdo
+
 
 strategies:
   saludo:
@@ -21,7 +22,7 @@ strategies:
   malestar:
     - say "Dime en una escala del 1 al 10 ¿qué tan fuerte es tu malestar?"
     - say "Tomando en cuenta que el 1 es un malestar muy bajo y el 10 es uno muy alto."
-    - input malestar
+    - input malestar |number 
     - remember malestar
   origen:
     - say "Perfecto, ¿podrías contarme qué es lo que pasa? ¿Qué te molestó o te hizo sentir mal? "
@@ -42,12 +43,14 @@ strategies:
     - say "Esta primera técnica consiste en una respiración profunda."
     - say "Necesito que te pongas cómodo por favor, estaría bien si puedes sentarte, pero si no, no te preocupes, lo puedes hacer en el lugar donde estés."
     - say "¿Estás de acuerdo?"
-    - input acuerdo
+    - input acuerdo | yesno
+    - say acuerdo
 
 script:
   - solve saludo
   - solve nombre
-  - solve malestar
+  - set_slot malestar -1 
+  - while malestar <1 or malestar >10 then solve malestar
   - solve origen
   - solve pensamiento
   - solve emociones
