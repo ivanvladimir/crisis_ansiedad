@@ -1,0 +1,54 @@
+settings:
+  name: CHATVOICE
+
+slots:
+  - nombre
+  - malestar
+  - origen
+  - pensamiento
+  - emociones
+  - acuerdo
+
+strategies:
+  saludo:
+    - say "Entiendo que estás experimentando emociones muy fuertes y pensamientos angustiantes."
+    - say "Gracias por solicitar mi ayuda. Esa es mi razón de existir."
+    - say "No estás solo, vamos a trabajar juntos para que te sientas mejor."
+  nombre:
+    - say "¿Puedes decirme tu nombre por favor?"
+    - input nombre
+    - remember nombre
+  malestar:
+    - say "Dime en una escala del 1 al 10 ¿qué tan fuerte es tu malestar?"
+    - say "Tomando en cuenta que el 1 es un malestar muy bajo y el 10 es uno muy alto."
+    - input malestar
+    - remember malestar
+  origen:
+    - say "Perfecto, ¿podrías contarme qué es lo que pasa? ¿Qué te molestó o te hizo sentir mal? "
+    - say "Recuerda que yo soy un agente virtual y solamente yo voy a leer lo que escribas."
+    - say "Nadie te va a juzgar. Conmigo tus pensamientos están seguros. "
+    - input origen
+  pensamiento:
+    - say "Entiendo lo difícil o complicada que esta situación puede ser para ti."
+    - say "¿Qué es lo que te está haciendo pensar esta situación?"
+    - input pensamiento
+  emociones:
+    - say "¿Qué emociones te están generando estos pensamientos? Trata de describirlas con tus palabras. "
+    - input emociones
+  acuerdo:
+    - say "Gracias por tener la confianza de compartir esto conmigo. Entiendo que a veces existen situaciones que nos pueden generar malestar."
+    - say "Pero no te preocupes, no estás solo en esto, yo estoy aquí para ayudarte."
+    - say "Te voy a brindar algunas técnicas que te ayudarán a sentirte mejor."
+    - say "Esta primera técnica consiste en una respiración profunda."
+    - say "Necesito que te pongas cómodo por favor, estaría bien si puedes sentarte, pero si no, no te preocupes, lo puedes hacer en el lugar donde estés."
+    - say "¿Estás de acuerdo?"
+    - input acuerdo
+
+script:
+  - solve saludo
+  - solve nombre
+  - solve malestar
+  - solve origen
+  - solve pensamiento
+  - solve emociones
+  - solve acuerdo

@@ -1,0 +1,17 @@
+2022-11-11 14:26:40,639 | INFO     | 0226 | Setting strategy: saludo
+2022-11-11 14:26:40,639 | INFO     | 0226 | Setting strategy: nombre
+2022-11-11 14:26:40,640 | INFO     | 0226 | Setting strategy: malestar
+2022-11-11 14:26:40,640 | INFO     | 0226 | Setting strategy: pensamientos
+2022-11-11 14:26:40,640 | INFO     | 0226 | Setting strategy: acuerdo
+2022-11-11 14:26:40,640 | INFO     | 0263 | Loading IS : conversations/ansiedad/is.json
+2022-11-11 14:26:40,640 | INFO     | 0486 | STARTS loop_sloots
+2022-11-11 14:26:40,649 | INFO     | 0404 | START input
+2022-11-11 14:26:40,650 | INFO     | 0446 | Waiting from keyboard
+2022-11-11 14:26:43,352 | INFO     | 0460 | USR: 12
+2022-11-11 14:26:43,352 | INFO     | 0477 | Saving result in: malestar
+2022-11-11 14:26:43,352 | INFO     | 0482 | ENDS input
+2022-11-11 14:26:43,358 | INFO     | 0404 | START input
+2022-11-11 14:26:43,359 | INFO     | 0446 | Waiting from keyboard
+2022-11-11 14:26:45,383 | INFO     | 0460 | USR: sdasd
+2022-11-11 14:26:45,383 | INFO     | 0477 | Saving result in: pensamientos
+2022-11-11 14:26:45,383 | INFO     | 0482 | ENDS input

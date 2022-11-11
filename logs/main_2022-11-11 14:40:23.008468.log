@@ -1,0 +1,38 @@
+2022-11-11 14:40:23,020 | INFO     | 0226 | Setting strategy: saludo
+2022-11-11 14:40:23,021 | INFO     | 0226 | Setting strategy: nombre
+2022-11-11 14:40:23,021 | INFO     | 0226 | Setting strategy: malestar
+2022-11-11 14:40:23,021 | INFO     | 0226 | Setting strategy: origen
+2022-11-11 14:40:23,021 | INFO     | 0226 | Setting strategy: pensamiento
+2022-11-11 14:40:23,021 | INFO     | 0226 | Setting strategy: emociones
+2022-11-11 14:40:23,021 | INFO     | 0226 | Setting strategy: acuerdo
+2022-11-11 14:40:23,021 | INFO     | 0263 | Loading IS : conversations/ansiedad/is.json
+2022-11-11 14:40:23,031 | INFO     | 0404 | START input
+2022-11-11 14:40:23,032 | INFO     | 0446 | Waiting from keyboard
+2022-11-11 14:40:24,076 | INFO     | 0460 | USR: a
+2022-11-11 14:40:24,077 | INFO     | 0477 | Saving result in: nombre
+2022-11-11 14:40:24,077 | INFO     | 0482 | ENDS input
+2022-11-11 14:40:24,083 | INFO     | 0404 | START input
+2022-11-11 14:40:24,084 | INFO     | 0446 | Waiting from keyboard
+2022-11-11 14:40:24,594 | INFO     | 0460 | USR: a
+2022-11-11 14:40:24,595 | INFO     | 0477 | Saving result in: malestar
+2022-11-11 14:40:24,595 | INFO     | 0482 | ENDS input
+2022-11-11 14:40:24,604 | INFO     | 0404 | START input
+2022-11-11 14:40:24,605 | INFO     | 0446 | Waiting from keyboard
+2022-11-11 14:40:25,620 | INFO     | 0460 | USR: a
+2022-11-11 14:40:25,621 | INFO     | 0477 | Saving result in: origen
+2022-11-11 14:40:25,621 | INFO     | 0482 | ENDS input
+2022-11-11 14:40:25,625 | INFO     | 0404 | START input
+2022-11-11 14:40:25,626 | INFO     | 0446 | Waiting from keyboard
+2022-11-11 14:40:26,105 | INFO     | 0460 | USR: a
+2022-11-11 14:40:26,105 | INFO     | 0477 | Saving result in: pensamiento
+2022-11-11 14:40:26,105 | INFO     | 0482 | ENDS input
+2022-11-11 14:40:26,108 | INFO     | 0404 | START input
+2022-11-11 14:40:26,109 | INFO     | 0446 | Waiting from keyboard
+2022-11-11 14:40:27,119 | INFO     | 0460 | USR: a
+2022-11-11 14:40:27,119 | INFO     | 0477 | Saving result in: emociones
+2022-11-11 14:40:27,119 | INFO     | 0482 | ENDS input
+2022-11-11 14:40:27,132 | INFO     | 0404 | START input
+2022-11-11 14:40:27,133 | INFO     | 0446 | Waiting from keyboard
+2022-11-11 14:40:27,980 | INFO     | 0460 | USR: a
+2022-11-11 14:40:27,980 | INFO     | 0477 | Saving result in: acuerdo
+2022-11-11 14:40:27,980 | INFO     | 0482 | ENDS input
