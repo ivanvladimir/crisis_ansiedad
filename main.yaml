@@ -1,167 +1,36 @@
 settings:
   name: SAM
 
+conversations:
+  - 'opcionA.yaml'
+
 slots:
-  - nombre
-  - malestar
-  - origen
-  - pAñadir
-  - cosaImportante
-  - pLineaSuicidio
-  - pApoyo
-  - personaApoyo
-  - contacto
-  - droga
-  - cuando
-  - implicados
-  - sensacion
-  - pensamiento
-  - emociones
-  - antes
-  - emocionAntes
-  - hacer
-  - respYES
-  - momento
-  - impidiendo
-  - pAyudarSol
-  - quienAyudaySol
+  - opcion
 
 strategies:
   saludo:
-    - say "Hola"
-    - say "Entiendo que estás experimentando emociones muy fuertes y pensamientos angustiantes."
-    - say "Gracias por solicitar mi ayuda. Esa es mi razón de existir."
-    - say "No estás solo, vamos a trabajar juntos para que te sientas mejor."
-  nombre:
-    - say "¿Puedes decirme tu nombre por favor?"
-    - input nombre
-    - remember nombre
-  malestar:
-    - say "Dime en una escala del 1 al 10 ¿qué tan fuerte es tu malestar?"
-    - say "Tomando en cuenta que el 1 es un malestar muy bajo y el 10 es uno muy alto."
-    - input malestar | number 
-    - remember malestar
-  malestarCont:
-    - say "Gracias por compartir esto conmigo."
-    - say "Entiendo que tu malestar es un {}".format(malestar)
-    - say "intentaremos que tu malestar disminuya."
-  origen:
-    - say "¿Podrías contarme qué es lo que pasa? ¿Qué te molestó o te hizo sentir mal? "
-    - say "Recuerda que yo soy un agente virtual y solamente yo voy a leer lo que escribas."
-    - say "Nadie te va a juzgar. Conmigo tus pensamientos están seguros. "
-    - input origen
-    - say "Muchas gracias por tener la confianza de compartir esto conmigo."
-    - say "Recuerda que cuentas conmigo para salir juntos de esto."
-  pAñadir:
-    - say "Necesito estar 100% seguro de que te entendí correctamente. Tu problema es:"
-    - say origen
-    - say "¿Quisieras añadir algo más?"
-    - input pAñadir | yesno
-  cosaImportante:
-    - say "cuéntame qué otra cosa es importante que yo sepa"
-    - input cosaImportante
-  pLineaSuicidio:
-    - say "¿Te gustaría ponerte en contacto con una de las líneas de ayuda de emergencia?"
-    - input pLineaSuicidio | yesno
-  lineaSuicidio:
-    - say "El siguiente número telefónico es  la línea de la vida 800 911 2000 en caso de que tengas pensamientos suicidas"
-    - say "Si consideras que estás en peligro, recuerda que puedes pedir ayuda también al 911"
-  pApoyo:
-    - say "Entiendo lo difícil o complicada que esta situación puede ser para ti."
-    - say "¿Consideras que alguien te puede apoyar  o te puede acompañar en esta situación?"
-    - input pApoyo | yesno
-  personaApoyo:
-    - say "¿quién consideras que te puede apoyar?"
-    - input personaApoyo
-  contacto:
-    - say "¿Te ayudaría ponerte en contacto con esa persona ahora mismo?"
-    - input contacto | yesno
-  droga:
-    - say "¿Estás bajo la influencia de cualquier sustancia, ya sea alcohol o alguna droga?"
-    - input droga | yesno
-  cuando:
-    - say "Entiendo que el incidente que te hizo sentir de esta manera fue:"
-    - say origen
-    - say "¿Cuando ocurrió esto?"
-    - input cuando
-  implicados:
-    - say "¿Quién o quiénes estuvieron implicados además de ti?"
-    - input implicados
-  sensacion:
-    - say "¿Qué sensaciones tienes en el cuerpo?"
-    - input sensacion
-  pensamiento:
-    - say "¿Qué es lo que estás pensando justo ahora?"
-    - input pensamiento
-  emociones:
-    - say "¿Qué emociones te están generando estos pensamientos? Trata de describirlas con tus palabras. "
-    - input emociones
-  antes:
-    - say "¿Qué crees que fue lo que generó este problema por el que estás pasando ahorita?"
-    - input antes
-  emocionAntes:
-    - say "¿Qué emociones tenías en ese momento?"
-    - input emocionAntes  
-  hacer:
-    - say "¿Hay algo que puedas hacer ahora mismo para modificar la situación?"
-    - input hacer | yesno
-  respYES:
-    - say "¿Qué es lo que puedes hacer?"
-    - input respYES
-    - solve momento
-  momento:
-    - say "¿Estás en el mejor momento para llevar a cabo esa acción?"
-    - input momento | yesno
-  impidiendo:
-    - say "¿Qué es lo que te está impidiendo solucionar el problema?"
-    - input impidiendo
-  pAyudarSol:
-    - say "¿Alguien te puede ayudar a solucionar tu problema?"
-    - input pAyudarSol |yesno
-  quienAyudaySol:
-    - say "¿quién consideras que te puede apoyar?"
-    - input quienAyudaySol
-  cortesias:
-    - say "Gracias por tener la confianza de compartir esto conmigo. Entiendo que a veces existen situaciones que nos pueden generar malestar."
-    - say "Pero no te preocupes, no estás solo en esto, yo estoy aquí para ayudarte."
-    - say "Te voy a brindar algunas técnicas que te ayudarán a sentirte mejor."
-    - say "Esta primera técnica consiste en una respiración profunda."
-    - say "Necesito que te pongas cómodo por favor, estaría bien si puedes sentarte, pero si no, no te preocupes, lo puedes hacer en el lugar donde estés."
-    - say "¿Estás de acuerdo?"
-    - input respNO | yesno
+    - say "Soy SAM, soy una inteligencia artificial creada por una institución de la UNAM."
+    - say "Estoy entrenado y disponible para ayudarte cuando te sientas mal."
+  opcion:
+    - say "¿Cómo te puedo ayudar hoy?"
+    - say ""
+    - say "Opcion 1:auxilio en crisis"
+    - say "Opcion 2:seguimiento"
+    - say "Opcion 3:platicar"
+    - input opcion | number
+  opcion2:
+    - say "No reconoci la opcion"
+    - say "¿Cómo te puedo ayudar hoy?"
+    - say ""
+    - say "Opcion 1:auxilio en crisis"
+    - say "Opcion 2:seguimiento"
+    - say "Opcion 3:platicar"
+    - input opcion2 | number
+  
 
 script:
   - solve saludo
-  - solve nombre
-  - set_slot malestar -1 
-  - while malestar <1 or malestar >10 then solve malestar
-  - solve malestarCont
-  - solve origen
-  - solve pAñadir
-  - if pAñadir == True then solve cosaImportante
-  - solve pLineaSuicidio
-  - if pLineaSuicidio == True then solve lineaSuicidio
-  - if pLineaSuicidio == False then say "De acuerdo, entonces continuemos."
-  - solve pApoyo
-  - if pApoyo == True then solve personaApoyo
-  - if pApoyo == True then solve contacto
-  - if contacto == True then say "Okay, ponte en contacto con esa persona y aquí te estaré esperando por si aún requieres mi ayuda."
-  - if contacto == False then say "De acuerdo, entonces continuemos."
-  - if pApoyo == False then say "No te preocupes, no estás sol@. Aquí estoy yo para ayudarte."
-  - say "Te voy a realizar algunas preguntas y trata de responderlas con tus palabras y con la mayor cantidad de detalle posible. Intenta concentrarte en las preguntas."
-  - solve droga
-  - solve cuando
-  - solve implicados
-  - solve sensacion
-  - solve pensamiento
-  - solve emociones
-  - say "Entiendo que puedes sentirte:{}".format(emociones)
-  - solve antes
-  - solve emocionAntes
-  - solve hacer
-  - if hacer == True then solve respYES
-  - if hacer == False then solve impidiendo
-  - solve pAyudarSol
-  - if pAyudarSol == True then solve quienAyudaySol
-  - if pAyudarSol == False then say "No te preocupes, aquí estoy yo para ayudarte"
-  - solve cortesias
+  - solve opcion
+  - set_slot opcion2 opcion
+  - while opcion2 <1 or opcion2>3 then solve opcion2
+  - if opcion2 == 1 then solve opcionA
