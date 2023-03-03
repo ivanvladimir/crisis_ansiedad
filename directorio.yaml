@@ -1,0 +1,8 @@
+script:
+- say "Te voy a brindar algunos números de emergencia para que te pongas en contacto con ellos si así lo requieres."
+- say "Mi entrenamiento tiene limitaciones por lo que si te encuentras en peligro y necesitas ayuda más directa te invito a que llames a alguno de los siguientes números:"
+- say "Si necesitas ayuda con una emergencia médica, si ocurrió un delito, si hay un incendio, una falta cívica, un accidente de tráfico,  recuerda que puedes pedir ayuda al 911"
+- say "El siguiente número telefónico es  la línea de la vida 800 911 2000 en caso de que tengas pensamientos suicidas"
+- say "Si te quieres comunicar con la CRUZ ROJA este es el número 55 53 95 11 11"
+- say "Si hay desaparición o extravío de personas o vehículos, accidentes, incendios o siniestros puedes comunicarte con LOCATEL 55 56 58 11 11"
+- say "Para hacer una denuncia anónima este es el número 089"

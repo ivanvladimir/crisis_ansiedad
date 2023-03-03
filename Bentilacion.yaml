@@ -1,0 +1,21 @@
+conversations:
+  - 'respSi.yaml'
+  - 'respNo.yaml'
+slots:
+  - respiracion
+strategies:
+  intro:
+    - say "Tras un accidente en un medio de transporte, podemos entrar en una crisis y sentirnos ansiosos o alterados,"
+    - say "nos podemos llegar a sentir confundidos o sentir que nos sobrepasa la situación."
+    - say "Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado."
+    - say "Pero no te preocupes,  esto tiene solución 😉."
+  respiracion:
+    - say "La forma como respiramos influye en nuestras emociones, por lo que si controlamos nuestra respiración 🫁 nos podemos sentir mejor 👌👍."
+    - say "Yo te puedo ayudar a que te sientas más tranquil@. ¿Te gustaría intentarlo? ."
+    - say "Esta técnica podría ayudarte a sentirte mejor en los próximos días también 💙."
+    - input respiracion | yesno
+script:
+  - solve intro
+  - solve respiracion
+  - if respiracion == True then solve respSi
+  - if respiracion == False then solve respNo

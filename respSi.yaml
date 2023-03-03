@@ -1,0 +1,14 @@
+conversations:
+  - 'categorizacion.yaml'
+
+strategies:
+  intro:
+    - say "¡Perfecto! Vamos a ensayar el re-entrenamiento de la respiración 🫁."
+    - say "Para explicar esto mejor, he preparado el siguiente video donde te daré ejemplos de la técnica que vamos a utilizar."
+    - say "Si en cualquier momento lo deseas, puedes parar el video y podemos continuar con el siguiente paso 😊."
+
+script:
+  - solve intro
+  - say "Espero que esta técnica te haya ayudado a sentirte aunque sea un poco mejor 😊💙."
+  - say "Ahora..."
+  - solve categorizacion

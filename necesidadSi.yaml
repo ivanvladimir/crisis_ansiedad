@@ -1,0 +1,51 @@
+conversations:
+  - 'derivacion.yaml'
+slots:
+  - preocupacion1
+  - preocupacion2
+  - preocupacion3
+  - otra
+  - otra2
+  - bandera
+  - jerarquia
+
+strategies:
+  intro:
+    - say "En estas situaciones podemos necesitar una o varias cosas."
+    - say "No obstante, es importante tratar de distinguir entre las cosas que no pueden esperar porque son urgentes y las que podemos resolver más adelante con más calma."
+  preocupacion1:
+    - say "Teniendo esto en mente, platícame por favor una cosa qué necesites justo ahora."
+    - input preocupacion1
+  otra:
+    - say "Lo estás haciedno muy bien👏👍😉, ¿hay algo más que  necesites o te preocupe?"
+    - input otra | yesno
+  preocupacion2:
+    - say "okay, platícame qué otra cosa necesitas 😊."
+    - input preocupacion2
+    - set_slot bandera True
+  otra2:
+    - say "Lo estás haciendo muy bien {} 💙👏".format(nombre)
+    - say "¿Existe algo más que necesites justo ahora?"
+    - input otra |yesno
+  preocupacion3:
+    - say "Muy bien, ¿qué otra cosa necesitas?"
+    - input preocupacion3
+  gracias:
+    - say "Muchas gracias {} por compartir esto conmigo 💕.".format(nombre)
+    - say "Entiendo que lo que necesitas justo ahora es:{}".format(preocupacion1,preocupacion2,preocupacion3)
+  jerarquia:
+    - say "Es importante tratar de ordenar o jerarquizar."
+    - say "lntentemos ordenar tus necesidades o preocupaciones.
+    - say "Escribe porfavor en orden lo que necesitas partiendo primero por lo más urgente , lo que no puede esperar ⏰."
+    - input jerarquia
+script:
+  - solve intro
+  - solve preocupacion1
+  - solve otra
+  - if otra == True then solve preocupacion2
+  - if otra == True then solve otra2
+  - if otra == False then say "Okay, muy bien"
+  - if otra2 == True then solve preocupacion3
+  - solve gracias
+  - if bandera == True then solve jerarquia
+  - solve derivacion
