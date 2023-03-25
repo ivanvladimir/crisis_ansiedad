@@ -4,6 +4,9 @@ settings:
 conversations:
   - 'opcionA.yaml'
 
+templates:
+    - 'resources/messages.yaml'
+
 slots:
   - opcion
 
@@ -26,9 +29,9 @@ strategies:
     - say "Opcion 2:seguimiento"
     - say "Opcion 3:platicar"
     - input opcion2 | number
-  
 
 script:
+  - say VIDEO
   - solve saludo
   - solve opcion
   - set_slot opcion2 opcion
