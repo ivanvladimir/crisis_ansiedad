@@ -2,35 +2,35 @@ settings:
   name: SAM
 
 conversations:
-  - 'opcionA.yaml'
-
+  - 'completa.yaml'
+  - 'Bentilacion.yaml'
+  - 'derivacion.yaml'
+  - 'directorio.yaml'
+  - 'psicoEducacion.yaml'
+  - 'escuchaActiva.yaml'
+  - 'necesidadSi.yaml'
+  - 'necesidadNo.yaml'
+  - 'categorizacion.yaml'
+  - 'psicoEducacion.yaml'
+  - 'necesidadSi.yaml'
+  - 'necesidadNo.yaml'
+  - 'respNo.yaml'
+  - 'respSi.yaml'
 slots:
   - opcion
 
 strategies:
-  saludo:
-    - say "Soy SAM, soy una inteligencia artificial creada por una institución de la UNAM."
-    - say "Estoy entrenado y disponible para ayudarte cuando te sientas mal."
-  opcion:
-    - say "¿Cómo te puedo ayudar hoy?"
-    - say ""
-    - say "Opcion 1:auxilio en crisis"
-    - say "Opcion 2:seguimiento"
-    - say "Opcion 3:platicar"
+  menu:
+    - say "Menu:"
+    - say "1. Primeros auxilios psicologicos (intervencion completa)"
+    - say "2. Bentilacion:re entrenamiento de la respiracion"
+    - say "3. Derivacion:directorio"
+    - say "4. psicoeducacion"
+    - say "ingresa el numero de la opcion deseada"
     - input opcion | number
-  opcion2:
-    - say "No reconoci la opcion"
-    - say "¿Cómo te puedo ayudar hoy?"
-    - say ""
-    - say "Opcion 1:auxilio en crisis"
-    - say "Opcion 2:seguimiento"
-    - say "Opcion 3:platicar"
-    - input opcion2 | number
-  
-
 script:
-  - solve saludo
-  - solve opcion
-  - set_slot opcion2 opcion
-  - while opcion2 <1 or opcion2>3 then solve opcion2
-  - if opcion2 == 1 then solve opcionA
+  - solve menu
+  - if opcion == 1 then solve completa
+  - if opcion == 2 then solve Bentilacion
+  - if opcion == 3 then solve derivacion
+  - if opcion == 4 then solve psicoeducacion
