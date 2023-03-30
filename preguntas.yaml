@@ -30,7 +30,7 @@ script:
   - say "De acuerdo. Gracias por querer compartir más cosas conmigo."
   - say "Te voy a realizar algunas preguntas y trata de responderlas con tus palabras y con la mayor cantidad de detalle posible."
   - say "Intenta concentrarte en las preguntas y respuestas."
-  - say "Entiendo que el incidente que te hizo sentir de esta manera fue:''".format{origien}
+  - say "Entiendo que el incidente que te hizo sentir de esta manera fue {}".format(origen)
   - solve fecha
   - solve lugar
   - solve implicados

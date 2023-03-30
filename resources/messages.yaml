@@ -1,0 +1,19 @@
+VIDEO:
+    - MSG:
+        - TEXT: |
+            <iframe src="static/img/movie.mov"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+MENU:
+    - MSG:
+        - TEXT: |
+            Menu:
+            1. Primeros auxilios psicológicos (intervención completa)
+            2. Ventilacion: re entrenamiento de la respiración
+            3. Derivacion: directorio
+            4. Psicoeducación
+            Ingresa el número de la opcion deseada

@@ -1,7 +1,15 @@
+# Chatbot
+#
+# Authors: Nicolas Kano
+#          Marlene Reyes
+#          Ivan Meza
+
 settings:
-  name: SAM
+    system_name: "[blue]Sam[/blue]"
+    user_name:   "[aquamarine1]Usuario[/aquamarine1]"
 
 conversations:
+  - 'opcionA.yaml'
   - 'completa.yaml'
   - 'Bentilacion.yaml'
   - 'derivacion.yaml'
@@ -16,18 +24,18 @@ conversations:
   - 'necesidadNo.yaml'
   - 'respNo.yaml'
   - 'respSi.yaml'
+
+templates:
+    - 'resources/messages.yaml'
+
 slots:
   - opcion
 
 strategies:
   menu:
-    - say "Menu:"
-    - say "1. Primeros auxilios psicologicos (intervencion completa)"
-    - say "2. Bentilacion:re entrenamiento de la respiracion"
-    - say "3. Derivacion:directorio"
-    - say "4. psicoeducacion"
-    - say "ingresa el numero de la opcion deseada"
+    - say MENU
     - input opcion | number
+
 script:
   - solve menu
   - if opcion == 1 then solve completa
