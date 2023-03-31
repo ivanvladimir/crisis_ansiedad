@@ -8,7 +8,6 @@ strategies:
     - say "Es muy importante que identifiquemos y ordenemos qué cosas necesitamos hacer en este momento."
     - say "Entiendo que a veces cuando nos enfrentamos a situaciones difíciles nos puede costar trabajo jerarquizar las necesidades pero,"
     - say "no te preocupes porque lo haremos juntos 💕."
-    - say ""
     - say "Me gustaría saber si quizás hay algo que tu necesites en este momento."
     - say "Tal vez necesites hablar con tu familia, o quizás necesites contactar a alguien, o requieres información respecto a tu situación de salud."
   necesidad:
