@@ -17,3 +17,14 @@ MENU:
             3. Derivacion: directorio
             4. Psicoeducación
             Ingresa el número de la opcion deseada
+
+INTRO:
+    - MSG:
+        - TEXT: |
+            Hola, soy **Mar**,
+
+            Soy un sistema de inteligencia artificial creada por la UNAM. Estoy programado y disponible para ofrecerte mi ayuda cuando has sido vícitma o testigo de un <span  style="color:tomato;">accidente de tránsito</span>. 
+
+            🚕🚘🚌🏍️🛵🛴🚝🚟🚁🛥️✈️🚙
+
+

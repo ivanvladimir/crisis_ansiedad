@@ -33,6 +33,7 @@ slots:
 
 strategies:
   menu:
+    - say INTRO
     - say MENU
     - input opcion | number
 
