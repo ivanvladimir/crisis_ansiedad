@@ -1,27 +1,27 @@
 slots:
   - nombre
   - sentirMal
+
 conversations:
   - 'escuchaActiva.yaml'
-  - 'Bentilacion.yaml'
+  - 'ventilacion.yaml'
+
 strategies:
   saludo:
-    - say "Hola, soy SAM, soy una inteligencia artificial creada por la UNAM."
-    - say "Estoy entrenado y disponible para ofrecerte mi ayuda cuando has sido victima o testigo de un accidente en algun medio de transporte.🚕🚘🚌🏍🚲🛴🚝🚡🚁🚤🛩🚙"
+    - say GRACIAS_AYUDA
   nombre:
-    - say "Entiendo que estás experimentando emociones muy fuertes y pensamientos angustiantes."
-    - say "Gracias por solicitar mi ayuda 😊.  Esa es mi razón de existir 😉."
-    - say "No estás sol@ en esto 💙."
     - say "¿Puedes decirme tu nombre por favor? 😊"
-    - input nombre
+    - input nombre | regex name name
+    - say "Hola {} 😊".format(nombre)
+
   sentirMal:
-    - say "Primero y sólo si tu deseas hablar de ello, vamos a conversar sobre lo que te ha pasado. Luego, si lo aceptas, te enseñaré algunas sencillas técnicas de relajación que te serán útiles. Finalmente veremos en conjunto como puedes acceder a algunos servicios sociales según sean tus necesidades :blush:."
+    - say PRIMERO
     - say "¿Te gustaría platicar de lo que pasó y contarme qué fue lo que te hizo sentir mal?"
     - input sentirMal | yesno
+
 script:
   - solve saludo
   - solve nombre
-  - say "Hola {}".format(nombre)
   - solve sentirMal
   - if sentirMal == True then solve escuchaActiva
   - if sentirMal == False then say "Entiendo, no te preocupes 😊"

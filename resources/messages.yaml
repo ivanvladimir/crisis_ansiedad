@@ -11,11 +11,12 @@ VIDEO:
 MENU:
     - MSG:
         - TEXT: |
-            Menu:
-            1. Primeros auxilios psicológicos (intervención completa)
-            2. Ventilacion: re entrenamiento de la respiración
-            3. Derivacion: directorio
-            4. Psicoeducación
+            ¿Cómo te puedo ayudar el día de hoy? 😊
+            1. Primeros Auxilios Psicológicos (intervención completa) 
+            2. Reentrenamiento de la respiración
+            3. Derivación: directorio
+            4. Psico Educación: síntomas
+
             Ingresa el número de la opcion deseada
 
 INTRO:
@@ -27,4 +28,23 @@ INTRO:
 
             🚕🚘🚌🏍️🛵🛴🚝🚟🚁🛥️✈️🚙
 
+GRACIAS_AYUDA:
+    - MSG:
+        - TEXT: |
+            Entiendo que estás experimentando emociones muy fuertes y pensamientos angustiantes.
+            Gracias por solicitar mi ayuda 😊
+
+            Esa es mi razón de existir 😉
+
+            No estás sol@ en esto ❤️
+
+PRIMERO:
+    - MSG:
+        - TEXT: |
+
+            Primero y sólo si tu deseas hablar de ello, vamos a conversar sobre lo que te ha pasado.
+
+            Luego, si lo aceptas, te enseñaré algunas sencillas técnicas de relajación que te serán útiles.
+
+            Finalmente veremos en conjunto como puedes acceder a algunos servicios sociales según sean tus necesidades 😊
 

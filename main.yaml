@@ -11,7 +11,7 @@ settings:
 conversations:
   - 'opcionA.yaml'
   - 'completa.yaml'
-  - 'Bentilacion.yaml'
+  - 'ventilacion.yaml'
   - 'derivacion.yaml'
   - 'directorio.yaml'
   - 'psicoEducacion.yaml'
@@ -28,18 +28,22 @@ conversations:
 templates:
     - 'resources/messages.yaml'
 
+regex:
+    name:
+        - '(([Mm][Ii] [Nn][Oo0][Mm][Bb][Rr][Ee] [Ee][SsZz]|[Ee][SsZz]|[Ss][Oo0][YyIi]|[Mm][Ee] (LL|Ll|ll|lL)[Aa][Mm][Oo0]) (?P<name>\S+)|(.*))'
+
 slots:
   - opcion
 
 strategies:
-  menu:
+  intro_menu:
     - say INTRO
     - say MENU
     - input opcion | number
 
 script:
-  - solve menu
+  - solve intro_menu
   - if opcion == 1 then solve completa
-  - if opcion == 2 then solve Bentilacion
+  - if opcion == 2 then solve ventilacion
   - if opcion == 3 then solve derivacion
   - if opcion == 4 then solve psicoeducacion

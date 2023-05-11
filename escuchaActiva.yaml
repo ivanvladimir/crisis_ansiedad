@@ -2,7 +2,7 @@ slots:
   - problema
   - malestar
 conversations:
-  - 'Bentilacion.yaml'
+  - 'ventilacion.yaml'
 strategies:
   problema:
     - say "De acuerdo , ¿podrías contarme qué está pasando o qué pasó?" 
@@ -29,4 +29,4 @@ script:
   - solve problemaCont
   - solve malestar
   - solve malestarCont
-  - solve Bentilacion
+  - solve ventilacion
