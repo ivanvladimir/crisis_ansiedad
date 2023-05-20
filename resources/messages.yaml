@@ -48,3 +48,16 @@ PRIMERO:
 
             Finalmente veremos en conjunto como puedes acceder a algunos servicios sociales según sean tus necesidades 😊
 
+INI_ESCUCHA_ACTIVA:
+    - MSG:
+        - TEXT: |
+            De acuerdo **¿Podrías contarme qué está pasando o qué pasó?** Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo voy a leer lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🤖.
+
+INI_VENTILACION:
+    - MSG:
+        - TEXT: |
+             <span style="color:tomato;">Tras un accidente de tránsito</span>, podemos entrar en una crisis y sentirnos ansiosos o alterados, nos podemos llegar a sentir confundidos o sentir que nos sobrepasa la situación. Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado. Pero no te preocupes, esto tiene solución 😉.
+
+
+
+

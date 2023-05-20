@@ -3,12 +3,12 @@ conversations:
 
 strategies:
   resSi:
-    - say "¡Perfecto! Vamos a ensayar el re-entrenamiento de la respiración 🫁."
-    - say "Para explicar esto mejor, he preparado el siguiente video donde te daré ejemplos de la técnica que vamos a utilizar."
-    - say "Si en cualquier momento lo deseas, puedes parar el video y podemos continuar con el siguiente paso 😊."
+    - say "Vamos a ensayar el re-entrenamiento de la respiración 🫁.. Para explicar esto mejor, he preparado el **siguiente video** donde te daré ejemplos de la técnica que vamos a utilizar. Oprime _play_ para comenzar el vieeo. Si en cualquier momento lo deseas, puedes parar el video y podemos continuar con el siguiente paso 😊."
 
 script:
   - solve resSi
+  - say VIDEO
   - say "Espero que esta técnica te haya ayudado a sentirte aunque sea un poco mejor 😊💙."
-  - say "Ahora..."
-  - solve categorizacion
+  - if opcion==1 then say "Ahora..."
+  - if opcion==1 then solve categorizacion
+  - if opcion==2 then say "Puedes regresar siempre que lo desees a realizar este ejercicio conmigo 😊🫁"

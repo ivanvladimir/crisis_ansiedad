@@ -9,9 +9,7 @@ strategies:
     - say "Entiendo, no te preocupes 😊. ¿Pasamos al siguiente paso  o quieres terminar con nuestra plática?"
     - input terminar | yesno
   despedida:
-    - say "De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁"
-    - say "y un directorio con teléfonos 📞 que te podrían ser de utilidad ahora o en los próximos días."
-    - say "Estarán disponibles ahí para ti. Cuídate mucho y regresa cuando gustes {} 😊.".format(nombre)
+    - say "De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁, información sobre tus posibles síntomas y un directorio con teléfonos 📞 que te podrían ser de utilidad ahora o en los próximos días. Estarán disponibles ahí para ti. Cuídate mucho y regresa cuando gustes {} 😊.".format(nombre)
 script:
   - solve terminar
   - if terminar == True then solve despedida

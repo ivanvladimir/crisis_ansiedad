@@ -1,29 +1,23 @@
 slots:
   - problema
   - malestar
+
 conversations:
   - 'ventilacion.yaml'
+
 strategies:
   problema:
-    - say "De acuerdo , ¿podrías contarme qué está pasando o qué pasó?" 
-    - say "Me gustaría tratar de entender cómo te sientes 😊."
-    - say "Recuerda que  yo soy un agente virtual y solamente yo voy a leer lo que escribas."
-    - say " Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🤖."
-    - input problema
+    - say INI_ESCUCHA_ACTIVA
+    - input problema 
   problemaCont:
-    - say "Gracias por compartir esto conmigo 💙."
-    - say "Entiendo que lo que pasó fue {}.".format(problema)
-    - say "Es comprensible que te sientas mal."
+    - say "Gracias por compartir esto conmigo 💙. Entiendo que lo que pasó fue _{}_. Es comprensible que te sientas mal. ".format(problema)
   malestar:
-    - say "Es inmportante para mi saber. ¿que tan fuerte es tu malestar en una escala del 1 al 10?"
-    - say "Tomando en cuenta que el 1 es un malestar muy bajo y el 10 es uno muy alto."
+    - say "Es importante para mi saber **¿qué tan fuerte es tu malestar en una escala del _1_ al _10_?**\n Tomando en cuenta que el _1_ es un malestar muy bajo y el _10_ es uno muy alto."
     - input malestar | number 
     - remember malestar
   malestarCont:
-    - say "Gracias por compartir esto conmigo 💙."
-    - say "Recuerda que estamos juntos en esto"
-    - say "Entiendo que tu malestar es un {}.".format(malestar)
-    - say "Vamos a hacer todo lo posible para que te sientas mejor😊."
+    - say "Gracias por compartir esto conmigo ❤️.\nRecuerda que estamos juntos en esto. Entiendo que tu malestar es un _{}_. Vamos a hacer todo lo posible para que te sientas mejor😊.".format(malestar)
+
 script:
   - solve problema
   - solve problemaCont

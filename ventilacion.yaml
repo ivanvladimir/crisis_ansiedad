@@ -1,0 +1,14 @@
+conversations:
+  - 'respSi.yaml'
+  - 'respNo.yaml'
+slots:
+  - respiracion
+strategies:
+  respiracion:
+    - say "La forma como respiramos influye en nuestras emociones, por lo que si controlamos nuestra respiración 🫁 nos podemos sentir mejor 👌👍. Yo te puedo ayudar a que te sientas más tranquil@. **¿Te gustaría intentarlo?** Esta técnica podría ayudarte a sentirte mejor en los próximos días también 💙."
+    - input respiracion | yesno
+script:
+  - say INI_VENTILACION
+  - solve respiracion
+  - if respiracion == True then solve respSi
+  - if respiracion == False then solve respNo
