@@ -24,14 +24,14 @@ strategies:
     - set_slot bandera True
   otra2:
     - say "Lo estás haciendo muy bien {} 💙👏".format(nombre)
-    - say "¿Existe algo más que necesites justo ahora?"
+    - say "**¿Existe algo más que necesites justo ahora?**"
     - input otra |yesno
   preocupacion3:
     - say "Muy bien, ¿qué otra cosa necesitas?"
     - input preocupacion3
   gracias:
     - say "Muchas gracias {} por compartir esto conmigo 💕.".format(nombre)
-    - say "Entiendo que lo que necesitas justo ahora es: **{0}**, **{1}** y **{2}**".format(preocupacion1,preocupacion2,preocupacion3)
+    - say "Entiendo que lo que necesitas justo ahora es **{preocupacion1}**, **{preocupacion2}** y **{preocupacion3}**"
   jerarquia:
     - say "Es importante tratar de ordenar o jerarquizar. Intentemos ordenar tus necesidades o preocupaciones. Escribe porfavor en orden lo que necesitas partiendo primero por lo más urgente , lo que no puede esperar ⏰."
     - input jerarquia

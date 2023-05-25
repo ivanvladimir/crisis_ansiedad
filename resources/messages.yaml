@@ -58,6 +58,26 @@ INI_VENTILACION:
         - TEXT: |
              <span style="color:tomato;">Tras un accidente de tránsito</span>, podemos entrar en una crisis y sentirnos ansiosos o alterados, nos podemos llegar a sentir confundidos o sentir que nos sobrepasa la situación. Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado. Pero no te preocupes, esto tiene solución 😉.
 
+DIRECTORIO:
+    - MSG:
+        - TEXT: |
+            Te voy a brindar algunos números de emergencia para que te pongas en contacto con ellos si así lo requieres
+            Mi entrenamiento tiene limitaciones por lo que si te encuentras en peligro y necesitas ayuda más directa te invito a que llames a alguno de los siguientes números&#58;
+
+            - Si necesitas ayuda con una **emergencia médica**, si ocurrió un **delito**, si hay un **incendio**, una falta **cívica**, un accidente de **tráfico**,  recuerda que puedes pedir ayuda al [911](tel:911)
+            - El siguiente número telefónico es de la **línea de la vida** <a href="tel:8009112000">800 911 2000</a> en caso de que tengas **pensamientos suicidas**
+            - Si te quieres comunicar con la **CRUZ ROJA** este es el número <a href="tel:5553951111">55 5395 1111</a>
+            - Si hay **desaparición o extravío de personas o vehículos**, **accidentes**, **incendios** o **siniestros** puedes comunicarte con ***LOCATEL*** <a href="tel:5556581111">55 5658 1111</a>
+            - Para hacer una denuncia anónima este es el número <a href="tel:089">089</a>
 
 
+TERMINAR:
+    - MSG:
+        - TEXT: |
+            De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁, información sobre tus posibles síntomas y el directorio con teléfonos ☎️ que te podrían ser de utilidad ahora o en los próximos días. Estarán disponibles ahí para ti todo el tiempo. Cuídate mucho. Gracias por venir conmigo el día de hoy, espero haberte  ayudado regresa cuando gustes  😊. Cuenta conmigo siempre que lo necesites 💕. 
 
+EXPLAIN_LIKERT:
+    - MSG:
+        - TEXT: |
+            Nuestra conversación ya está por finalizar, pero antes de que te deje descanzar  quisiera preguntarte, en estos momentos **¿qué tan fuerte** es tu malestar en una escala del _1_ al _10_?**
+            Tomando en cuenta que el **1** es un malestar muy bajo y el **10** es uno muy alto.

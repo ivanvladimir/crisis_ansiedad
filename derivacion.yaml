@@ -1,30 +1,33 @@
 conversations:
   - 'psicoEducacion.yaml'
-  - 'directorio.yaml'
 slots:
   - contacto
   - familiar
 strategies:
   contacto:
-    - say "Okay, ahora que hemos visto algunas de tus necesidades,"
-    - say "quisiera preguntarte si planeas ponerte en contacto con algún familiar, amigo o ser querido cuando terminemos de platicar o en un tiempo corto 💙📞."
+    - say "Okay, ahora que hemos visto algunas de tus necesidades 💕"
+    - say "Quisiera preguntarte si planeas ponerte en contacto con algún familiar, amigo o ser querido cuando terminemos de platicar o en un tiempo corto 💙📞."
     - input contacto | yesno
   familiar:
-    - say "¿Con quién te gustaría poenrte en contacto justo ahora?"
+    - say "**¿Con quién te gustaría poenrte en contacto justo ahora?**"
     - input familiar
-    - say "Me parece una excelente idea que te pongas en contacto con {}.".format(familiar)
-    - say "El contar con una red de apoyo en estas situaciones es benéfica para ayudarte a sentirte mejor 💙👍."
+    - say "Me parece una excelente idea que te pongas en contacto con {}. Contar con una red de apoyo en estas situaciones es benéfica para ayudarte a sentirte mejor 💙👍.".format(familiar)
+    - solve directorio
   respNo:
-    - say "Okay, no te preocupes."
-    - say "Pero si me lo permites, te recomiendo no aislarte."
-    - say "Se ha visto que ayuda mucho para sentirse mejor el compartir con amigos y familiares... pasar tiempo  acompañados 💕😊."
-    - say "Por lo que cuando estés list@, ponte en contacto con algún ser querido 📞💙. "
+    - say "Okay, no te preocupes. Pero si me lo permites, te recomiendo no aislarte. Se ha visto que ayuda mucho para sentirse mejor el compartir con amigos y familiares... pasar tiempo  acompañados 💕😊. Por lo que cuando estés list@, ponte en contacto con algún ser querido 📞💙. "
+  querer:
+    - say "Antes de terminar, me gustaría brindarte algunos consejos e información para los próximos días."
+    - say "**¿Te parece bien?**"
+    - input querer | yesno
+  psicoeducacion:
+    - solve psicoEducacion
+    - solve eval
+
 script:
   - solve contacto
   - if contacto == True then solve familiar
   - if contacto == False then solve respNo
-  - say "Ahora, si me lo permites te voy brindar un directorio con números de emergencia 📞 que te podrían ser de utilidad para resolver tus necesidades urgentes o puedes usarlo más adelante para cualquier situación que se presente."
-  - say "Encontrarás en el directorio líneas telefónicas donde te pueden brindar una atención psicológica o médica las 24 horas del día."
-  - say "Te recomiedno tomarles una captura de pantalla o anotarlos. Aunque estarán disponibles para ti todo el tiempo en mi menú 😊."
-  - solve directorio
-  - solve psicoEducacion
+  - if opcion==1 then solve querer
+  - if querer==False then say TERMINAR
+  - if querer==True then solve psicoeducacion
+

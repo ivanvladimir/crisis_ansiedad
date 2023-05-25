@@ -6,13 +6,13 @@ slots:
 
 strategies:
   terminar:
-    - say "Entiendo, no te preocupes 😊. **¿Pasamos al siguiente paso o quieres terminar con nuestra plática?**"
-    - input terminar | yesno
+    - say "Entiendo, no te preocupes 😊. **¿Pasamos al siguiente paso?**"
+    - input cont | yesno
   despedida:
     - say "De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁 y un directorio con teléfonos 📞 que te podrían ser de utilidad ahora o en los próximos días. Estarán disponibles ahí para ti. Cuídate mucho y regresa cuando gustes {} 😊.".format(nombre)
 
 script:
   - solve terminar
-  - if terminar == True then solve despedida
-  - if terminar == False then say "Okay!, sigamos entonces 😊"
-  - if terminar == False then solve categorizacion
+  - if cont == False then solve despedida
+  - if cont == True then say "Okay!, sigamos entonces 😊"
+  - if cont == True then solve categorizacion

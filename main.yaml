@@ -6,8 +6,8 @@
 #          Ivan Meza
 
 settings:
-    system_name: "[blue]Sam[/blue]"
-    user_name:   "[aquamarine1]Usuario[/aquamarine1]"
+    system_name: "[blue]Mar[/blue]"
+    user_name:   "[aquamarine1]Usuari@[/aquamarine1]"
 
 conversations:
   - 'opcionA.yaml'
@@ -25,6 +25,7 @@ conversations:
   - 'necesidadNo.yaml'
   - 'respNo.yaml'
   - 'respSi.yaml'
+  - 'eval.yaml'
 
 templates:
     - 'resources/messages.yaml'
@@ -43,9 +44,17 @@ strategies:
     - say MENU
     - input opcion | number
 
+  main:
+    - solve intro_menu
+    - if opcion == 1 then solve completa
+    - if opcion == 2 then solve ventilacion
+    - if opcion == 3 then solve directorio
+    - if opcion == 4 then solve psicoeducacion
+    - say "¿Quieres regresar al menu princial?"
+    - input loop | yesno
+
 script:
-  - solve intro_menu
-  - if opcion == 1 then solve completa
-  - if opcion == 2 then solve ventilacion
-  - if opcion == 3 then solve derivacion
-  - if opcion == 4 then solve psicoeducacion
+  - set_slot loop True
+  - while loop then solve main
+  - say "Cuídate mucho. Gracias por venir conmigo el día de hoy, espero haberte  ayudado y que ahora te sientas mejor ❤️😄"
+  - say "Regresa cuando gustes😊. Cuenta con Mar siempre que lo necesites, {nombre} ❤️🐶❤️."
