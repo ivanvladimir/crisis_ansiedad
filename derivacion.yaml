@@ -1,33 +1,33 @@
-conversations:
-  - 'psicoEducacion.yaml'
 slots:
   - contacto
   - familiar
 strategies:
   contacto:
     - say "Okay, ahora que hemos visto algunas de tus necesidades 💕"
-    - say "Quisiera preguntarte si planeas ponerte en contacto con algún familiar, amigo o ser querido cuando terminemos de platicar o en un tiempo corto 💙📞."
+    - say "Quisiera preguntarte si **planeas ponerte en contacto con algún familiar, amigo o ser querido cuando terminemos de platicar o en un tiempo corto** 💙📞."
     - input contacto | yesno
+
   familiar:
     - say "**¿Con quién te gustaría poenrte en contacto justo ahora?**"
     - input familiar
     - say "Me parece una excelente idea que te pongas en contacto con {}. Contar con una red de apoyo en estas situaciones es benéfica para ayudarte a sentirte mejor 💙👍.".format(familiar)
     - solve directorio
+
   respNo:
     - say "Okay, no te preocupes. Pero si me lo permites, te recomiendo no aislarte. Se ha visto que ayuda mucho para sentirse mejor el compartir con amigos y familiares... pasar tiempo  acompañados 💕😊. Por lo que cuando estés list@, ponte en contacto con algún ser querido 📞💙. "
+
   querer:
     - say "Antes de terminar, me gustaría brindarte algunos consejos e información para los próximos días."
     - say "**¿Te parece bien?**"
     - input querer | yesno
+
   psicoeducacion:
-    - solve psicoEducacion
-    - solve eval
+    - solve psico_educacion
+    - say "medio" #solve eval
 
 script:
   - solve contacto
   - if contacto == True then solve familiar
   - if contacto == False then solve respNo
   - if opcion==1 then solve querer
-  - if querer==False then say TERMINAR
-  - if querer==True then solve psicoeducacion
-
+  - if querer==False then say TERMINAR else solve psicoeducacion

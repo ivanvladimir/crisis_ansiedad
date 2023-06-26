@@ -15,12 +15,11 @@ conversations:
   - 'ventilacion.yaml'
   - 'derivacion.yaml'
   - 'directorio.yaml'
-  - 'psicoEducacion.yaml'
+  - 'psico_educacion.yaml'
   - 'escuchaActiva.yaml'
   - 'necesidadSi.yaml'
   - 'necesidadNo.yaml'
   - 'categorizacion.yaml'
-  - 'psicoEducacion.yaml'
   - 'necesidadSi.yaml'
   - 'necesidadNo.yaml'
   - 'respNo.yaml'
@@ -33,7 +32,7 @@ templates:
 regex:
     name:
         - '(([Mm][Ii] [Nn][Oo0][Mm][Bb][Rr][Ee] [Ee][SsZz]|[Ee][SsZz]|[Ss][Oo0][YyIi]|[Mm][Ee] (LL|Ll|ll|lL)[Aa][Mm][Oo0]) (?P<name>\S+)|(.*))'
-        - '(?P<name>.*)'
+        - '(?P<name>.+)'
 
 slots:
   - opcion
