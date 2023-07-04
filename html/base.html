@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>	
+    <head>	
     <!-- seo related -->
     {% block title %}{% endblock %}
 
@@ -23,9 +23,84 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
   </head>
   <body>
+	<script>
+	</script>
+
+
     {% block script %}{% endblock %}
 
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="#">Mar 🐶</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+		  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item">
+			  <a class="nav-link active" id="dirEmergencies" data-bs-toggle="modal" data-bs-target="#modalEmergencies" href="#">Directorio emergencias</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" id="dirEmergencies" data-bs-toggle="modal" data-bs-target="#modalApoyo" href="#">Directorio apoyo psicológico</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
 	{% block content %}{% endblock %}
+
+	<!-- Modal -->
+	<div class="modal fade" id="modalEmergencies" tabindex="-1" aria-labelledby="modalEmergencies" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Directorio emergencias</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="modalEmergencies" tabindex="-1" aria-labelledby="modalEmergencies" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="emergenciesModalLabel">Directorio emergencias</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="modalApoyo" tabindex="-1" aria-labelledby="modalApoyo" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="apoyoModalLabel">Directorio apoyo psicológico</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			...
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 
     <!-- vendor script files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
