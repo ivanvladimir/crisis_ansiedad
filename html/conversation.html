@@ -73,6 +73,12 @@
                     // speak
                     //window.speechSynthesis.speak(utter);
 				};
+                // Finish
+	            if(data.cmd=="finish"){
+                    document.getElementById('msg_input').disabled = true;
+                    document.getElementById('chat_window').disabled = true;
+                    document.getElementById('bye_message').removeAttribute('hidden');
+				};
             };
         });
     </script>
@@ -80,11 +86,21 @@
 
 {% block content %}
 	<div class="container">
+		<div id="bye_message" class="row padded_row" hidden='True'>
+            <div class="col-md-4 mx-auto">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Gracias por conversar</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Cuestionario</h6>
+                    <p class="card-text">Ahora te pedimos que nos apoyes respondiendo el siguiente cuestionario.</p>
+                    <a href="#" class="btn btn-success">Ir a cuestionario</a>
+                </div>
+            </div>
+            </div>
+        </div>
 
 		<div class="row padded_row">
-
-				<div class="chat_window">
-
+				<div id="chat_window" class="chat_window">
 					<div class="top_menu">
                         <div class="title">Mar 🐶</div>
 					</div>

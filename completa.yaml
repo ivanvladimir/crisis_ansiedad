@@ -9,10 +9,6 @@ conversations:
 strategies:
   saludo:
     - say GRACIAS_AYUDA
-  nombre:
-    - say "¿Puedes decirme tu nombre por favor? 😊"
-    - input nombre | regex name name
-    - say "Hola {} 😊".format(nombre)
 
   sentirMal:
     - say PRIMERO
@@ -21,7 +17,6 @@ strategies:
 
 script:
   - solve saludo
-  - solve nombre
   - solve sentirMal
   - if sentirMal == True then solve escuchaActiva
   - if sentirMal == False then say "Entiendo, no te preocupes 😊"
