@@ -15,7 +15,11 @@
                 var ws = new WebSocket('{{protocol}}://{{server}}' + namespace+`${client_id}`);
             }
             ws.addEventListener("open", (event) => {
-                ws.send(JSON.stringify({'cmd':'start','conversation':"{{chat_name}}"}));
+                var preferences={};
+                {% for k,v in data.items() %}
+                preferences["{{k}}"]="{{v}}";
+                {% endfor %}
+                ws.send(JSON.stringify({'cmd':'start','conversation':"{{chat_name}}",'data':preferences }));
             });
 
             $('#send').click(function(e){sendMSG(e)});
