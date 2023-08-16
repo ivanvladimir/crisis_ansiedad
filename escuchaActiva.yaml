@@ -10,7 +10,8 @@ strategies:
     - say INI_ESCUCHA_ACTIVA
     - input problema 
   problemaCont:
-    - say "Gracias por compartir esto conmigo 💙. Entiendo que lo que pasó fue _{}_. Es comprensible que te sientas mal. ".format(problema)
+    - post zs labelling 'text':problema,'texts':['vi un choque','choqué'],'labels':['presenciaste un accidente','tuviste un accidente'] problema_response
+    - say "Gracias por compartir esto conmigo 💙. Entiendo que lo que pasó fue que _{}_. Es comprensible que te sientas mal. ".format(problema_response['result'])
   malestar:
     - say "Es importante para mi saber **¿qué tan fuerte es tu malestar en una escala del _1_ al _10_?**\n Tomando en cuenta que el _1_ es un malestar muy bajo y el _10_ es uno muy alto."
     - input malestar | number 

@@ -9,7 +9,7 @@ strategies:
     - say "Entiendo, no te preocupes 😊. **¿Pasamos al siguiente paso?**"
     - input cont | yesno
   despedida:
-    - say "De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁 y un directorio con teléfonos 📞 que te podrían ser de utilidad ahora o en los próximos días. Estarán disponibles ahí para ti. Cuídate mucho y regresa cuando gustes {} 😊.".format(nombre)
+    - say "De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁 y un directorio con teléfonos 📞 que te podrían ser de utilidad ahora o en los próximos días. Estarán disponibles ahí para ti. Cuídate mucho y regresa cuando gustes {} 😊.".format(username)
 
 script:
   - solve terminar

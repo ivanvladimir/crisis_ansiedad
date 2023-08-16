@@ -42,7 +42,7 @@ strategies:
     - input nombre
     - remember nombre
   lugarSeguro:
-    - say "Hola {}".format(nombre)
+    - say "Hola {}".format(username)
     - say "¿En este momento te encuentras en un lugar seguro donde no corras algún riesgo para que platiquemos con tranquilidad?"
     - input lugarSeguro | yesno
   malestar:

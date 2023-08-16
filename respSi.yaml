@@ -49,11 +49,13 @@ script:
   - while video_visto then solve ask_video
   - say "Espero que esta técnica te haya ayudado a sentirte aunque sea un poco mejor 😊💙."
   - say "**¿Te gustaría probar otra técnica de relajación o continuar con el siguiente paso?** 😊 Es importante que realices este ejercicio en un lugar seguro. Si todavía te encuentras en el lugar del accidente, te recomiendo pasar al siguiente paso y omitir esta técnica."
-  - input otro_ejercicio | yesno 
-  - if opcion==1 and otro_ejercicio==True then solve cinco_cosas
-  - if opcion==1 and otro_ejercicio==True and cont==True then solve cinco_cosas_cont
-  - if opcion==1 and otro_ejercicio==True and cont==False then solve categorizacion
-  - if opcion==1 and otro_ejercicio==True and ask_cont==True then solve derivacion
-  - if opcion==1 and otro_ejercicio==True and ask_cont==False then say TERMINAR
-  - if opcion==1 and otro_ejercicio==False and cont==False then solve categorizacion
+  - input res_ejercicio
+  - post zs labelling 'text':res_ejercicio,'texts':['probar otra técnica relajación','continuar siguiente paso','si','no'],'labels':['si','no','si','no'] response_ejercicio
+  - set_slot otro_ejercicio response_ejercicio['result']
+  - if opcion==1 and otro_ejercicio=='si' then solve cinco_cosas
+  - if opcion==1 and otro_ejercicio=='si' and cont==True then solve cinco_cosas_cont
+  - if opcion==1 and otro_ejercicio=='si' and cont==False then solve categorizacion
+  - if opcion==1 and otro_ejercicio=='si' and ask_cont==True then solve derivacion
+  - if opcion==1 and otro_ejercicio=='si' and ask_cont==False then say TERMINAR
+  - if opcion==1 and otro_ejercicio=='no' and cont==False then solve categorizacion
   - if opcion==2 then say "Puedes regresar siempre que lo desees a realizar este ejercicio conmigo 😊🫁"
