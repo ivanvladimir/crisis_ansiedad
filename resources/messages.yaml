@@ -26,14 +26,14 @@ INTRO:
 
             Soy **Mar**,
 
-            Soy un sistema de inteligencia artificial creada por la UNAM. Estoy programado y disponible para ofrecerte mi ayuda cuando has sido vícitma o testigo de un <span  style="color:tomato;">accidente de tránsito</span>. 
+            Soy un sistema de inteligencia artificial creada por la UNAM. Estoy disponible para ofrecerte mi ayuda cuando has sido vícitma o testigo de un <span  style="color:tomato;">accidente de tránsito</span>. 
 
             🚕🚘🚌🛵🛴🚙
 
 GRACIAS_AYUDA:
     - MSG:
         - TEXT: |
-            Entiendo que estás experimentando emociones muy fuertes y pensamientos angustiantes.
+            Entiendo que estás atravesando por una situación difícil y quizás estés experiementando emociones muy fuertes y pensamientos angustiantes.
             Gracias por solicitar mi ayuda 😊
 
             Esa es mi razón de existir 😉
