@@ -58,7 +58,9 @@ INI_ESCUCHA_ACTIVA:
 INI_VENTILACION:
     - MSG:
         - TEXT: |
-             <span style="color:tomato;">Tras un accidente de tránsito</span>, podemos entrar en una crisis y sentir muchas emociones que nos pueden hacer sentir mal. Podemos llegar a sentirnos confundidos o sentir que nos sobrepasa la situación. Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado. Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas mejor 😉.
+             <span style="color:tomato;">Tras un accidente de tránsito</span>, podemos entrar en una crisis y sentir muchas emociones que nos pueden hacer sentir mal. 
+             - Podemos llegar a sentirnos confundidos o sentir que nos sobrepasa la situación. Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado. 
+             - Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas mejor 😉.
 
 DIRECTORIO:
     - MSG:
