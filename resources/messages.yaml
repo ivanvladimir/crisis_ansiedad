@@ -12,10 +12,10 @@ MENU:
     - MSG:
         - TEXT: |
             ¿Cómo te puedo ayudar el día de hoy? 😊
-            1. Primeros Auxilios Psicológicos (intervención completa) 
-            2. Reentrenamiento de la respiración
-            3. Derivación: directorio
-            4. Psico Educación: síntomas
+            1: Primeros Auxilios Psicológicos (intervención completa) 
+            2: Reentrenamiento de la respiración
+            3: Derivación: directorio
+            4.: Psico-educación: información sobre los síntomas
 
             Ingresa el número de la opcion deseada
 
