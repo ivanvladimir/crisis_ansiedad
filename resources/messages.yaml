@@ -34,21 +34,21 @@ GRACIAS_AYUDA:
     - MSG:
         - TEXT: |
             Entiendo que estás atravesando por una situación difícil y quizás estés experiementando emociones muy fuertes y pensamientos angustiantes.
-            Gracias por solicitar mi ayuda 😊
+            Gracias por solicitar mi ayuda 😊.
 
-            Esa es mi razón de existir 😉
+            Esa es mi razón de existir 😉.
 
-            No estás sol@ en esto ❤️
+            No estás sol@ en esto ❤️.
 
 PRIMERO:
     - MSG:
         - TEXT: |
 
-            Primero y sólo si tu deseas hablar de ello, vamos a conversar sobre lo que te ha pasado.
+            Primero y sólo si tu lo deseas, vamos a conversar sobre lo que te está haciendo sentir mal. 
 
-            Luego, si lo aceptas, te enseñaré algunas sencillas técnicas de relajación que te serán útiles.
+            Luego, si lo aceptas, te enseñaré algunas sencillas técnicas de relajación que te serán útiles 😊❤️.
 
-            Finalmente veremos en conjunto como puedes acceder a algunos servicios sociales según sean tus necesidades 😊
+            Finalmente en conjunto revisaremos algunos servicios sociales a los que puedes llamar según sean tus necesidades y te informaré sobre algunos síntomas que podrías llegar a presentar en los siguientes días  😊💕.
 
 INI_ESCUCHA_ACTIVA:
     - MSG:
