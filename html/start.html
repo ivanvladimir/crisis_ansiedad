@@ -7,7 +7,7 @@
         var total_conversations=TOTAL_CONVERSATIONS;
         $(document).ready(function(){
             namespace = '/cv';
-            var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
+            var socket = io.connect('https://' + document.domain + ':' + location.port + namespace);
             socket.emit('get_state',{'sid':socket.sid});
             socket.on('state log', function(data) {
                 console.log('state_log',data)

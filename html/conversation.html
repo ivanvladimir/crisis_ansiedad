@@ -37,7 +37,7 @@
             function sendMSG(e) {
                 var msg = String($('#msg_input').val());
                 if(msg.trim().length>0){
-                    ws.send(JSON.stringify({'cmd':'input completed','msg':msg}));
+                    ws.send(JSON.stringify({'cmd':'input completed','msg':msg,'client_id':client_id}));
                     showUserMessage(msg,getCurrentTimestamp());
                     $('#msg_input').val('');
                     msgCount += 1;
@@ -80,8 +80,21 @@
                     document.getElementById('bye_message').removeAttribute('hidden');
                     window.scrollTo(0, document.body.scrollHeight);
 				};
-
             };
+
+            ws.onclose = function(e) {
+                    console.log('Socket is closed. Reconnect will be attempted in 1 second.', e.reason);
+                        if(port.length>0){
+                                var ws = new WebSocket('{{protocol}}://{{server}}:{{port}}' + namespace+`${client_id}`);
+                            }else{
+                                var ws = new WebSocket('{{protocol}}://{{server}}' + namespace+`${client_id}`);
+                        }
+                  };
+
+            ws.onerror = function(err) {
+                      console.error('Socket encountered error: ', err.message, 'Closing socket');
+                      ws.close();
+                    };
         });
     </script>
 {% endblock %}

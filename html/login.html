@@ -12,13 +12,13 @@
         const existingId = getCookie('uniqueId');
         if (existingId) {
             const form = document.getElementById('user-form');
-            form.action =`/cv/mar/${existingId}/`;
+            form.action =`https://turing.iimas.unam.mx/cv/mar/${existingId}`;
             return existingId;
         }
         const uniqueId = Math.floor(Math.random() * 1000000);
         document.cookie = `uniqueId=${uniqueId};`;
         const form = document.getElementById('user-form');
-        form.action =`/cv/mar/${uniqueId}/`;
+        form.action =`https://turing.iimas.unam.mx/cv/mar/${uniqueId}`;
         return uniqueId;
     }
 
@@ -59,7 +59,7 @@
             document.cookie = `gender=${gender};`;
 
             uniqueId = createOrRetrieveUniqueId(username);
-
+ 
             this.submit();
         });
     });

@@ -1,7 +1,7 @@
 VIDEO:
     - MSG:
         - TEXT: |
-            <iframe src="static/img/movie.mov"
+            <iframe src="/cv/static/img/movie.mov"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
