@@ -3,13 +3,14 @@ conversations:
 
 strategies:
   resSi:
-    - say "Vamos a ensayar el re-entrenamiento de la respiración 🫁.. Para explicar esto mejor, he preparado el **siguiente video** donde te daré ejemplos de la técnica que vamos a utilizar. Oprime _play_ para comenzar el vieeo. Si en cualquier momento lo deseas, puedes parar el video y podemos continuar con el siguiente paso 😊."
+    - say "Vamos a ensayar el ejercicio de re-entrenamiento de la respiración 🫁. Para explicarlo mejor, he preparado el **siguiente video** donde te daré ejemplos de la técnica que vamos a utilizar. Oprime _play_ para comenzar el vieeo. Si en cualquier momento lo deseas, puedes parar el video y podemos continuar con el siguiente paso 😊."
 
   set_video:
     - set_slot video_visto False
 
   ask_video:
     - say "**¿Ya terminaste el ejercicio?**"
+    - say "Escribe Si o No 😊"
     - input res_video_visto | yesno
     - set_slot video_visto True
     - if res_video_visto then solve set_video
@@ -48,7 +49,7 @@ script:
   - say VIDEO
   - while video_visto then solve ask_video
   - say "Espero que esta técnica te haya ayudado a sentirte aunque sea un poco mejor 😊💙."
-  - say "**¿Te gustaría probar otra técnica de relajación o continuar con el siguiente paso?** 😊 Es importante que realices este ejercicio en un lugar seguro. Si todavía te encuentras en el lugar del accidente, te recomiendo pasar al siguiente paso y omitir esta técnica."
+  - say "**¿Te gustaría probar otra técnica de relajación?** 😊 Es importante que realices este ejercicio en un lugar seguro. Si todavía te encuentras en el lugar del accidente, te recomiendo pasar al siguiente paso y omitir esta técnica."
   - input res_ejercicio
   - post zs labelling 'text':res_ejercicio,'texts':['probar otra técnica relajación','continuar siguiente paso','si','no'],'labels':['si','no','si','no'] response_ejercicio
   - set_slot otro_ejercicio response_ejercicio['result']
