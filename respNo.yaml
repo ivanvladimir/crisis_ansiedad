@@ -15,5 +15,5 @@ strategies:
 script:
   - solve terminar
   - if cont == False then solve despedida
-  - if cont == True then say "Okay!, sigamos entonces 😊"
+  - if cont == True then say "Okay, sigamos entonces 😊"
   - if cont == True then solve categorizacion
