@@ -12,7 +12,7 @@ strategies:
 
   sentirMal:
     - say PRIMERO
-    - say "**¿Te gustaría platicarme qué te está haciendo sentir mal?**"
+    - say "**¿Te gustaría platicarme qué te está generando malestar?**"
     - say 'Escribe Si o No'
     - input sentirMal | yesno
 
