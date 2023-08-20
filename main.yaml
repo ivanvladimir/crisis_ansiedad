@@ -58,5 +58,5 @@ strategies:
 script:
   - set_slot loop True
   - while loop then solve main
-  - say "Cuídate mucho. Gracias por venir conmigo el día de hoy, espero haberte  ayudado y que ahora te sientas mejor ❤️😄"
+  - say "Cuídate mucho. Gracias por haber confiado en mi el día de hoy ❤️😄"
   - say "Regresa cuando gustes😊. Cuenta con Mar siempre que lo necesites, {} ❤️🐶❤️.".format(username)
