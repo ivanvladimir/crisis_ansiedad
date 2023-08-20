@@ -44,35 +44,32 @@ PRIMERO:
     - MSG:
         - TEXT: |
 
-            Primero y sólo si tu lo deseas, vamos a conversar sobre lo que te está haciendo sentir mal. 
+            Para comenzar, sólo si tu lo deseas, vamos a conversar sobre lo que te está haciendo sentir mal. 
 
             Luego, si lo aceptas, te enseñaré algunas sencillas técnicas de relajación que te serán útiles 😊❤️.
 
-            Finalmente en conjunto revisaremos algunos servicios sociales a los que puedes llamar según sean tus necesidades y te informaré sobre algunos síntomas que podrías llegar a presentar en los siguientes días  😊💕.
+            Finalmente en conjunto revisaremos algunos servicios de emergencia y sociales a los que puedes llamar según sean tus necesidades y te informaré sobre algunos síntomas que podrías llegar a presentar en los siguientes días  😊💕.
 
 INI_ESCUCHA_ACTIVA:
     - MSG:
         - TEXT: |
-            De acuerdo **¿Podrías platicarme qué te está generando malestar?** Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo leeré lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🐶❤️.
+            De acuerdo, ** por favor platícame qué te está haciendo sentir mal** . Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo leeré lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🐶❤️.
 
 INI_VENTILACION:
     - MSG:
         - TEXT: |
-             <span style="color:tomato;">Tras un accidente de tránsito</span>, podemos entrar en una crisis y sentir muchas emociones que nos pueden hacer sentir mal. 
-             - Podemos llegar a sentirnos confundidos o sentir que nos sobrepasa la situación. Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado. 
-             - Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas mejor 😉.
+             <span style="color:tomato;">Tras un accidente de tránsito</span>, es normal experimentar una crisis y sentir una variedad de emociones que pueden ser desafiantes. 
+             - Podemos llegar a sentirnos confundidos o pensar que nos sobrepasa la situación. Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado. 
+             - Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas más tranquil@ 😉.
 
 DIRECTORIO:
     - MSG:
         - TEXT: |
-            Te voy a brindar algunos números de emergencia para que te pongas en contacto con ellos si así lo requieres
-            Mi entrenamiento tiene limitaciones por lo que si te encuentras en peligro y necesitas ayuda más directa te invito a que llames a alguno de los siguientes números&#58;
+            Es importante para mi que tengas este directorio con números de emergencia que te pueden ser de utilidad para resolver tus necesidades urgentes 📞. 
+            Encontrarás en el directorio líneas telefónicas donde te pueden brindar ayuda médica, vial y atención psicológica las 24 horas del día ❤️🧠. 
+            Te recomiendo guardar la imagen o anotar los números, aunque también estarán disponibles para ti todo el tiempo en mi menú 🐶💕.
+            
 
-            - Si necesitas ayuda con una **emergencia médica**, si ocurrió un **delito**, si hay un **incendio**, una falta **cívica**, un accidente de **tráfico**,  recuerda que puedes pedir ayuda al [911](tel:911)
-            - El siguiente número telefónico es de la **línea de la vida** <a href="tel:8009112000">800 911 2000</a> en caso de que tengas **pensamientos suicidas**
-            - Si te quieres comunicar con la **CRUZ ROJA** este es el número <a href="tel:5553951111">55 5395 1111</a>
-            - Si hay **desaparición o extravío de personas o vehículos**, **accidentes**, **incendios** o **siniestros** puedes comunicarte con ***LOCATEL*** <a href="tel:5556581111">55 5658 1111</a>
-            - Para hacer una denuncia anónima este es el número <a href="tel:089">089</a>
 
 
 TERMINAR:
