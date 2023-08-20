@@ -3,7 +3,7 @@ conversations:
 
 strategies:
   resSi:
-    - say "Vamos a ensayar el ejercicio de re-entrenamiento de la respiración 🫁. Para explicarlo mejor, he preparado el **siguiente video** donde te daré ejemplos de la técnica que vamos a utilizar. Oprime _play_ para comenzar el vieeo. Si en cualquier momento lo deseas, puedes parar el video y podemos continuar con el siguiente paso 😊."
+    - say "Muy bien. Para explicar mejor el ejercicio 🫁, he preparado el **siguiente video** . Oprime _play_ para comenzar a ver el viedeo. Si en cualquier momento lo deseas, puedes parar el video 😊."
 
   set_video:
     - set_slot video_visto False
