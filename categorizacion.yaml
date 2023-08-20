@@ -5,10 +5,12 @@ slots:
   - necesidad
 strategies:
   intro:
-    - say "Entiendo que a veces cuando nos enfrentamos a situaciones difíciles nos puede costar trabajo identificar qué necesitamos en este momento  💕."
-    - say "Me gustaría saber si quizás hay algo que tu necesites en este momento. Tal vez necesites hablar con tu familia, o quizás necesites contactar a alguien, o requieres información respecto a tu situación de salud."
+    - say "A veces cuando nos enfrentamos a situaciones desafiantes nos puede costar trabajo identificar qué necesitamos en ese momento 😊💕."
+    - say "Existen necesidades ***urgentes*** que debemos resolver lo antes posible, como acudir a un médico, comunicarnos con familiares o amigos, o contactar a los servicios de emergencia 📞😊."
+    - say "También hay otras necesidades que pueden esperar un poco más, como consultar con un mecánico o solicitar un día libre en el trabajo o en la escuela 🚘📞."
   necesidad:
-    - say "**¿Consideras que  tienes alguna necesidad urgente en este momento?**"
+    - say "Por lo tanto, me gustaría preguntarte, **¿consideras que tienes alguna necesidad urgente en este momento?**"
+    - say "Escribe Si o No"
     - input necesidad | yesno
 script:
   - solve intro
