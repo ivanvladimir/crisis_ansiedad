@@ -3,22 +3,24 @@ slots:
   - familiar
 strategies:
   contacto:
-    - say "Okay, ahora que hemos visto algunas de tus necesidades 💕"
-    - say "Quisiera preguntarte si **planeas ponerte en contacto con algún familiar, amigo o ser querido cuando terminemos de platicar o en un tiempo corto** 💙📞."
+    - say "Quisiera preguntarte si **planeas ponerte en contacto con algún ser querido cuando terminemos de platicar o en un tiempo corto** 💙📞."
+    - say "Escribe Si o No"
     - input contacto | yesno
 
   familiar:
-    - say "**¿Con quién te gustaría poenrte en contacto justo ahora?**"
+    - say "**¿Con quién te gustaría ponerte en contacto lo más pronto posible?**"
+    - say "Escribe su nombre o apodo 😊❤️📞"
     - input familiar
-    - say "Me parece una excelente idea que te pongas en contacto con {}. Contar con una red de apoyo en estas situaciones es benéfica para ayudarte a sentirte mejor 💙👍.".format(familiar)
+    - say "Me parece una excelente idea que te pongas en contacto con {}. Contar con una red de apoyo en estas situaciones es benéfico para ayudarte a sentir mejor 💙👍.".format(familiar)
     - solve directorio
 
   respNo:
-    - say "Okay, no te preocupes. Pero si me lo permites, te recomiendo no aislarte. Se ha visto que ayuda mucho para sentirse mejor el compartir con amigos y familiares... pasar tiempo  acompañados 💕😊. Por lo que cuando estés list@, ponte en contacto con algún ser querido 📞💙. "
+    - say "Okay, no te preocupes. Pero si me lo permites, cuando te sientas list@ te recomiendo mantener el contacto con seres queridos. Se ha visto que ayuda mucho  el compartir tiempo con seres queridos 💕😊. "
 
   querer:
-    - say "Antes de terminar, me gustaría brindarte algunos consejos e información para los próximos días."
+    - say "Antes de terminar, me gustaría brindarte algunos consejos e información para los próximos días 😊❤️."
     - say "**¿Te parece bien?**"
+    - say "Escribe Si o No"
     - input querer | yesno
 
   psicoeducacion:
