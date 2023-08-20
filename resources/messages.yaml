@@ -33,7 +33,7 @@ INTRO:
 GRACIAS_AYUDA:
     - MSG:
         - TEXT: |
-            Entiendo que estás atravesando por una situación difícil y quizás estés experimentando emociones muy fuertes y pensamientos angustiantes.
+            Entiendo que estás atravesando por una situación difícil y quizás estés experimentando emociones muy fuertes.
             Gracias por solicitar mi ayuda 😊.
 
             Esa es mi razón de existir 😉.
@@ -48,7 +48,7 @@ PRIMERO:
 
             Luego, estás de acuerdo, te enseñaré algunas sencillas técnicas de relajación que pueden ser útiles para ti 😊❤️.
 
-            Finalmente, juntos revisaremos los servicios de emergencia y recursos sociales a los que puedes llamar según tus necesidades. También te proporcionaré información sobre algunos síntomas que podrías experimentar en los próximos días 😊💕.
+            Finalmente, revisaremos los servicios de emergencia y recursos sociales a los que puedes llamar según tus necesidades. También te proporcionaré información sobre algunos síntomas que podrías experimentar en los próximos días 😊💕.
 
 INI_ESCUCHA_ACTIVA:
     - MSG:
@@ -58,16 +58,16 @@ INI_ESCUCHA_ACTIVA:
 INI_VENTILACION:
     - MSG:
         - TEXT: |
-             <span style="color:tomato;">Tras un accidente de tránsito</span>, es normal experimentar una crisis y sentir una variedad de emociones que pueden ser desafiantes. 
-             - Podemos llegar a sentirnos confundidos o pensar que nos sobrepasa la situación. Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado. 
+             <span style="color:tomato;">Tras un accidente de tránsito</span>, es normal experimentar malestar. 
+             - Podemos llegar a sentirnos confundidos, pensar que nos sobrepasa la situación o sentir nuestro corazón y respiración alterados ❤️🫁. 
              - Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas más tranquil@ 😉.
 
 DIRECTORIO:
     - MSG:
         - TEXT: |
-            Es importante para mí que tengas este directorio con números de emergencia que pueden serte de utilidad para resolver tus necesidades urgentes 📞. 
-            En el directorio encontrarás líneas telefónicas donde pueden brindarte ayuda médica, vial y atención psicológica las 24 horas del día  ❤️🧠. 
-            Te recomiendo guardar la imagen o anotar los números, aunque también estarán disponibles para ti en cualquier momento en mi menú 🐶💕.
+            Es importante para mí que tengas este directorio con números de emergencia que pueden serte útiles para atender cualquier necesidad presente o futura 📞. 
+            En él,  encontrarás líneas telefónicas donde pueden brindarte ayuda médica, asistencia vial y apoyo psicológico las 24 horas del día   ❤️🧠. 
+           Te recomiendo guardar la imagen o anotar los números, aunque también estarán disponibles para ti en cualquier momento en mi menú  🐶💕.
             
 
 
@@ -75,10 +75,12 @@ DIRECTORIO:
 TERMINAR:
     - MSG:
         - TEXT: |
-            De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁, información sobre tus posibles síntomas y el directorio con teléfonos ☎️ que te podrían ser de utilidad ahora o en los próximos días. Estarán disponibles ahí para ti todo el tiempo. Cuídate mucho. Gracias por venir conmigo el día de hoy, espero haberte  ayudado regresa cuando gustes  😊. Cuenta conmigo siempre que lo necesites 💕. 
+            De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁, información sobre tus posibles síntomas y el directorio con teléfonos ☎️ que te podrían ser de utilidad ahora o en los próximos días. 
+            Cuídate mucho y regresa cuando gustes ❤️😊. Cuenta conmigo siempre que lo necesites 🐶💕. 
 
 EXPLAIN_LIKERT:
     - MSG:
         - TEXT: |
-            Nuestra conversación ya está por finalizar, pero antes de que te deje descanzar  quisiera preguntarte, en estos momentos **¿qué tan fuerte** es tu malestar en una escala del _1_ al _10_?**
-            Tomando en cuenta que el **1** es un malestar muy bajo y el **10** es uno muy alto.
+            Ya estamos por terminar ❤️😊, pero antes de que nos despidamos quisiera preguntarte **¿qué tan fuerte** es tu malestar en una escala del _1_ al _10_?** 
+            Escribe el número que más te represente tomando en cuenta que el **1** es un malestar muy bajo y el **10** es uno muy alto.
+            
