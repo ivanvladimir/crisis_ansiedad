@@ -14,8 +14,8 @@ MENU:
             ¿Cómo te puedo ayudar el día de hoy? 😊
             1: Primeros Auxilios Psicológicos (intervención completa) 
             2: Reentrenamiento de la respiración
-            3: Derivación: directorio
-            4.: Psico-educación: información sobre los síntomas
+            3: Derivación: Directorio
+            4: Psico-educación: Información sobre los síntomas
 
             Ingresa el número de la opcion deseada
 
@@ -26,14 +26,14 @@ INTRO:
 
             Soy **Mar**,
 
-            Soy un sistema de inteligencia artificial creada por la UNAM. Estoy disponible para ofrecerte mi ayuda cuando has sido vícitma o testigo de un <span  style="color:tomato;">accidente de tránsito</span>. 
+            Soy un sistema de inteligencia artificial creado por la UNAM. Estoy disponible para ofrecerte mi ayuda cuando has sido vícitma o testigo de un <span  style="color:tomato;">accidente de tránsito</span>. 
 
             🚕🚘🚌🛵🛴🚙
 
 GRACIAS_AYUDA:
     - MSG:
         - TEXT: |
-            Entiendo que estás atravesando por una situación difícil y quizás estés experiementando emociones muy fuertes y pensamientos angustiantes.
+            Entiendo que estás atravesando por una situación difícil y quizás estés experimentando emociones muy fuertes y pensamientos angustiantes.
             Gracias por solicitar mi ayuda 😊.
 
             Esa es mi razón de existir 😉.
@@ -44,16 +44,16 @@ PRIMERO:
     - MSG:
         - TEXT: |
 
-            Para comenzar, sólo si tu lo deseas, vamos a conversar sobre lo que te está haciendo sentir mal. 
+            Para comenzar, solo si así lo deseas, vamos a hablar sobre lo que te está haciendo sentir mal.
 
-            Luego, si lo aceptas, te enseñaré algunas sencillas técnicas de relajación que te serán útiles 😊❤️.
+            Luego, estás de acuerdo, te enseñaré algunas sencillas técnicas de relajación que pueden ser útiles para ti 😊❤️.
 
-            Finalmente en conjunto revisaremos algunos servicios de emergencia y sociales a los que puedes llamar según sean tus necesidades y te informaré sobre algunos síntomas que podrías llegar a presentar en los siguientes días  😊💕.
+            Finalmente, juntos revisaremos los servicios de emergencia y recursos sociales a los que puedes llamar según tus necesidades. También te proporcionaré información sobre algunos síntomas que podrías experimentar en los próximos días 😊💕.
 
 INI_ESCUCHA_ACTIVA:
     - MSG:
         - TEXT: |
-            De acuerdo, ** por favor platícame qué te está haciendo sentir mal** . Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo leeré lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🐶❤️.
+            De acuerdo, ** por favor cuéntame qué te está haciendo sentir mal** . Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo leeré lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🐶❤️.
 
 INI_VENTILACION:
     - MSG:
@@ -65,9 +65,9 @@ INI_VENTILACION:
 DIRECTORIO:
     - MSG:
         - TEXT: |
-            Es importante para mi que tengas este directorio con números de emergencia que te pueden ser de utilidad para resolver tus necesidades urgentes 📞. 
-            Encontrarás en el directorio líneas telefónicas donde te pueden brindar ayuda médica, vial y atención psicológica las 24 horas del día ❤️🧠. 
-            Te recomiendo guardar la imagen o anotar los números, aunque también estarán disponibles para ti todo el tiempo en mi menú 🐶💕.
+            Es importante para mí que tengas este directorio con números de emergencia que pueden serte de utilidad para resolver tus necesidades urgentes 📞. 
+            En el directorio encontrarás líneas telefónicas donde pueden brindarte ayuda médica, vial y atención psicológica las 24 horas del día  ❤️🧠. 
+            Te recomiendo guardar la imagen o anotar los números, aunque también estarán disponibles para ti en cualquier momento en mi menú 🐶💕.
             
 
 
