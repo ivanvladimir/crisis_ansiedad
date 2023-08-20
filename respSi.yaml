@@ -16,30 +16,35 @@ strategies:
     - if res_video_visto then solve set_video
 
   cinco_cosas:
-    - say "Muy bien,   es importante que sepas que después de una situación difícil y peligrosa, es normal experimentar ansiedad, recuerdos recurrentes y otros síntomas incómodos."
-    - say "Las técnicas para poner los pies sobre la tierra nos ayudan a controlar estos síntomas y nos ayudan a enfocarnos en el presente."
-    - say "A continuación haremos la técnica  5-4-3-2-1, la cual nos ayudará a prestar atención en los detalles de lo que nos rodea usando cada uno de los sentidos 👂 ✋ 👃 👁️ 👄"
-    - say "Te pido por favor que te esfuerces en observar detalles que normalmente ignoramos 👀, como sonidos distantes 🎶 o la textura de un objeto ordinario 🍪"
+    - say "Excelente. La técnica 5-4-3-2-1 nos ayudará a conectarnos con nuestros 5 sentidos👂 ✋ 👃 👁️ 👄"
+    - say "Te pido por favor que durante todo el ejercicio, te esfuerces en enfocar tu atención en cosas y estímulos que sean agradables para ti ❤️😊."
     - say "**¿Comenzamos?**😊"
+    - say "Escribe Si o No"
     - input cont | yesno
   cinco_cosas_cont:
     - say "Escribe 5 cosas que puedas ver 👁️ 👀 😊... "
-    - say "Intenta buscar detalles pequeños tales como el patrón en un techo o la menra en la que luz refleja en la superficie ☀️ 💡"
+    - say "Observa los colores, las formas y los detalles a tu alrededor 🌸☀️. "
     - input respuesta
-    - say "Escribe 4 cosas que puedas sentir ✋ 🤗 🦶"
-    - say " Note la sensación de la ropa sobre su cuerpo, el sol sobre su piel o la sensación de la silla sobre la que está sentado. Escoja un objeto y examine su peso, textura u otras cualidades físicas 👖 👚 🪑"
+    - say "¡Muy bien! 😊❤️"
+    - say "Ahora, escribe 4 cosas que puedas sentir con tu cuerpo ✋ 🤗 🦶..."
+    - say "Como la sensación de alguna tela o el clima sobre tu piel 👖 👚 ☀️🌧️"
     - input respuesta
-    - say "Escribe 3 cosas que puedas oir 👂 🎶"
-    - say "Ponga atención a los sonidos que su mente haya excluido, como el tictac de un reloj o el viento soplando en los árboles ⏰ 🍁 🌲 🎶."
+    - say "Excelente trabajo 👏❤️"
+    - say "Continúa escribiendo 3 cosas que puedas oir 👂🎶..."
+    - say "Pon atención a los sonidos de tu alrededor, pueden estar lejos o cerca de ti ⏰ 🍁 🌲 🎶."
     - input respuesta
-    - say "Escribe 2 cosas que puedas oler 👃 ..."
-    - say "Intente identificar los olores en el aire a su alrededor, como el aromatizante de aire o pasto recién cortado. También puede buscar algo que huela, como una flor o una vela sin encender 🌸🕯️"
+    - say "¡Lo estás haciendo muy bien! 😊❤️"
+    - say "Ahora, respira profundamente y escribe 2 cosas que puedas oler 👃 ..."
+    - say "Intenta identificar los aromas que estén cerca de ti 🌸🕯️"
     - input respuesta
-    - say "Escribe 1 cosas que puedas saborear 👄..."
-    - say "Lleve consigo chicle, dulces o colaciones pequeñas para este paso. Introduzca uno en su boca y enfoque su atención en los sabores 🍬 🍪 🍫"
+    - say "Muy buenas respuestas ❤️."
+    - say "Para terminar, escribe 1 cosa que puedas saborear 👄..."
+    - say "Imagina algún alimento que te guste, su sabor, temperatura y textura 🍬 🍪 🍫"
     - input respuesta
-    - say "¡Listo! Lo hiciste muy bien. Espero que te sientas mejor después de haber heccho este ejercicio."
+    - say "¡Excelente! Has completado el ejercicio 5-4-3-2-1 de manera admirable 😉❤️. Espero que hayas logrado establecer una conexión con tus sentidos y experimentar sensaciones gratificantes 😁."
+    - say "Recuerda que puedes practicar esta técnica siempre que lo desees 🐶❤️."
     - say "**¿Deseas continuar la conversación?**"
+    - say "Escribe Si o No"
     - input ask_cont | yesno
 
 script:
@@ -48,8 +53,8 @@ script:
   - set_slot cont False
   - say VIDEO
   - while video_visto then solve ask_video
-  - say "Espero que esta técnica te haya ayudado a sentirte aunque sea un poco mejor 😊💙."
-  - say "**¿Te gustaría probar otra técnica de relajación?** 😊 Es importante que realices este ejercicio en un lugar seguro. Si todavía te encuentras en el lugar del accidente, te recomiendo pasar al siguiente paso y omitir esta técnica."
+  - say "Lo hiciste muy bien 💕. Espero que este ejercicio te haya ayudado a relajarte 😊💙."
+  - say "**¿Te gustaría probar otra técnica de relajación?** 😊 Te recomiendo practicarla solo si ya te encuentras en un entorno seguro y fuera del lugar del accidente. Si  no es así, te sugiero no probar esta técnica por ahora."
   - input res_ejercicio
   - post zs labelling 'text':res_ejercicio,'texts':['probar otra técnica relajación','continuar siguiente paso','si','no'],'labels':['si','no','si','no'] response_ejercicio
   - set_slot otro_ejercicio response_ejercicio['result']
