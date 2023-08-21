@@ -20,5 +20,5 @@ script:
   - solve saludo
   - solve sentirMal
   - if sentirMal == True then solve escuchaActiva
-  - if sentirMal == False then say "Entiendo, no te preocupes 😊"
+  - if sentirMal == False then say "Entiendo, muy bien 😊."
   - if sentirMal == False then solve ventilacion
