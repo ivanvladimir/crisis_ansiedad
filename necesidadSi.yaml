@@ -28,7 +28,6 @@ strategies:
     - say "**¿Existe algo más que necesites justo ahora?**"
     - say "Escribe Si o No"
     - input otra |yesno
-    - set_slot bandera True
   preocupacion3:
     - say "Muy bien, ¿qué otra cosa necesitas?"
     - input preocupacion3
