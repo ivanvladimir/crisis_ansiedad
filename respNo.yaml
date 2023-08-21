@@ -6,7 +6,7 @@ slots:
 
 strategies:
   terminar:
-    - say "Entiendo, no te preocupes 😊. **¿Continuamos con nuestra conversación?**"
+    - say "Muy bien 😊. **¿Continuamos con nuestra conversación?**"
     - say "Escribe Si o No"
     - input cont | yesno
   despedida:
