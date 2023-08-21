@@ -10,7 +10,7 @@ strategies:
     - say "También hay otras necesidades que pueden esperar un poco más, como consultar con un mecánico o solicitar un día libre en el trabajo o en la escuela 🚘📞."
   necesidad:
     - say "Por lo tanto, me gustaría preguntarte, **¿consideras que tienes alguna necesidad urgente en este momento?**"
-    - say "Escribe Si o No"
+    - say 'Escribe Si o No'
     - input necesidad | yesno
 script:
   - solve intro
