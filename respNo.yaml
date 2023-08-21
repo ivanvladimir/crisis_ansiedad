@@ -10,7 +10,7 @@ strategies:
     - say "Escribe Si o No"
     - input cont | yesno
   despedida:
-    - say "De acuerdo, en mi menú está el ejercicio de re-entrenamiento de la respiración 🫁, el directorio con teléfonos 📞 que te podrían ser de utilidad ahora o en los próximos días e información sobre posibles síntomas. Cuídate mucho y regresa cuando gustes {} 😊.".format(username)
+    - say "De acuerdo, por si lo necesitas, en mi menú está el ejercicio de re-entrenamiento de la respiración 🫁, el directorio con teléfonos 📞 que te podrían ser de utilidad ahora o en los próximos días e información sobre posibles síntomas. Cuídate mucho y regresa cuando gustes {} 😊.".format(username)
 
 script:
   - solve terminar
