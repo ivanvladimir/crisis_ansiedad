@@ -11,16 +11,16 @@ slots:
 
 strategies:
   intro:
-    - say "Teniendo en cuenta que hay situaciones que requieren atención inmediata y otras que pueden abordarse con calma más adelante, identifiquemos juntos las necesidades urgentes que puedas tener 😊..."
+    - say "Teniendo en cuenta que hay situaciones que requieren atención inmediata y otras que pueden abordarse con calma más adelante, identifiquemos junt@s las necesidades urgentes que puedas tener 😊..."
   preocupacion1:
     - say "Platícame por favor alguna necesidad urgente que tengas:"
     - input preocupacion1
   otra:
-    - say "Muy bien👏👍😉, **¿hay algo más que  necesites o te preocupe?**"
+    - say "Muy bien👏👍😉, **¿hay algo más que necesites?**"
     - say "Escribe Si o No"
     - input otra | yesno
   preocupacion2:
-    - say "okay, platícame qué otra cosa necesitas 😊."
+    - say "okay, platícame qué más necesitas 😊."
     - input preocupacion2
     - set_slot bandera True
   otra2:
