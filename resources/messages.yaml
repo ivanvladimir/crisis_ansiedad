@@ -12,10 +12,10 @@ MENU:
     - MSG:
         - TEXT: |
             ¿Cómo te puedo ayudar el día de hoy? 😊
-            1. Primeros Auxilios Psicológicos (intervención completa) 
-            2. Reentrenamiento de la respiración
-            3. Derivación: directorio
-            4. Psico Educación: síntomas
+            1: Primeros Auxilios Psicológicos (intervención completa) 
+            2: Reentrenamiento de la respiración
+            3: Derivación: Directorio
+            4: Psico-educación: Información sobre los síntomas
 
             Ingresa el número de la opcion deseada
 
@@ -26,14 +26,14 @@ INTRO:
 
             Soy **Mar**,
 
-            Soy un sistema de inteligencia artificial creada por la UNAM. Estoy disponible para ofrecerte mi ayuda cuando has sido vícitma o testigo de un <span  style="color:tomato;">accidente de tránsito</span>. 
+            Soy un sistema de inteligencia artificial creado por la UNAM. Estoy disponible para ofrecerte mi ayuda cuando has sido vícitma o testigo de un <span  style="color:tomato;">accidente de tránsito</span>. 
 
             🚕🚘🚌🛵🛴🚙
 
 GRACIAS_AYUDA:
     - MSG:
         - TEXT: |
-            Entiendo que estás atravesando por una situación difícil y quizás estés experiementando emociones muy fuertes y pensamientos angustiantes.
+            Entiendo que estás atravesando por una situación difícil y quizás estés experimentando emociones muy fuertes.
             Gracias por solicitar mi ayuda 😊.
 
             Esa es mi razón de existir 😉.
@@ -44,42 +44,43 @@ PRIMERO:
     - MSG:
         - TEXT: |
 
-            Primero y sólo si tu lo deseas, vamos a conversar sobre lo que te está haciendo sentir mal. 
+            Para comenzar, sólo si así lo deseas, vamos a hablar sobre lo que te está haciendo sentir mal.
 
-            Luego, si lo aceptas, te enseñaré algunas sencillas técnicas de relajación que te serán útiles 😊❤️.
+            Luego, si estás de acuerdo, te enseñaré algunas sencillas técnicas de relajación que pueden ser útiles para ti 😊❤️.
 
-            Finalmente en conjunto revisaremos algunos servicios sociales a los que puedes llamar según sean tus necesidades y te informaré sobre algunos síntomas que podrías llegar a presentar en los siguientes días  😊💕.
+            Finalmente, revisaremos los servicios de emergencia y recursos sociales a los que puedes llamar según tus necesidades. También te proporcionaré información sobre algunos síntomas que podrías experimentar en los próximos días 😊💕.
 
 INI_ESCUCHA_ACTIVA:
     - MSG:
         - TEXT: |
-            De acuerdo **¿Podrías platicarme qué te está generando malestar?** Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo leeré lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🐶❤️.
+            De acuerdo, ** por favor cuéntame qué te está haciendo sentir mal** . Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo leeré lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🐶❤️.
 
 INI_VENTILACION:
     - MSG:
         - TEXT: |
-             <span style="color:tomato;">Tras un accidente de tránsito</span>, podemos entrar en una crisis y sentir muchas emociones que nos pueden hacer sentir mal. Podemos llegar a sentirnos confundidos o sentir que nos sobrepasa la situación. Es normal tener dificultades para respirar o sentir que nuestro corazón está muy agitado. Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas mejor 😉.
+             <span style="color:tomato;">Tras un accidente de tránsito</span>, es normal experimentar malestar. 
+             - Podemos llegar a sentirnos confundidos, pensar que nos sobrepasa la situación o sentir nuestro corazón y respiración alterados ❤️🫁. 
+             - Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas más tranquil@ 😉.
 
 DIRECTORIO:
     - MSG:
         - TEXT: |
-            Te voy a brindar algunos números de emergencia para que te pongas en contacto con ellos si así lo requieres
-            Mi entrenamiento tiene limitaciones por lo que si te encuentras en peligro y necesitas ayuda más directa te invito a que llames a alguno de los siguientes números&#58;
+            Es importante para mí que tengas este directorio con números de emergencia que pueden serte útiles para atender cualquier necesidad presente o futura 📞. 
+            En él,  encontrarás líneas telefónicas donde pueden brindarte ayuda médica, asistencia vial y apoyo psicológico las 24 horas del día ❤️🧠. 
+            Te recomiendo guardar la imagen o anotar los números, aunque también estarán disponibles para ti en cualquier momento en mi menú  🐶💕.
+            
 
-            - Si necesitas ayuda con una **emergencia médica**, si ocurrió un **delito**, si hay un **incendio**, una falta **cívica**, un accidente de **tráfico**,  recuerda que puedes pedir ayuda al [911](tel:911)
-            - El siguiente número telefónico es de la **línea de la vida** <a href="tel:8009112000">800 911 2000</a> en caso de que tengas **pensamientos suicidas**
-            - Si te quieres comunicar con la **CRUZ ROJA** este es el número <a href="tel:5553951111">55 5395 1111</a>
-            - Si hay **desaparición o extravío de personas o vehículos**, **accidentes**, **incendios** o **siniestros** puedes comunicarte con ***LOCATEL*** <a href="tel:5556581111">55 5658 1111</a>
-            - Para hacer una denuncia anónima este es el número <a href="tel:089">089</a>
 
 
 TERMINAR:
     - MSG:
         - TEXT: |
-            De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁, información sobre tus posibles síntomas y el directorio con teléfonos ☎️ que te podrían ser de utilidad ahora o en los próximos días. Estarán disponibles ahí para ti todo el tiempo. Cuídate mucho. Gracias por venir conmigo el día de hoy, espero haberte  ayudado regresa cuando gustes  😊. Cuenta conmigo siempre que lo necesites 💕. 
+            De acuerdo, en mi menú podrías encontrar el ejercicio de re-entrenamiento de la respiración 🫁, información sobre tus posibles síntomas y el directorio con teléfonos ☎️ que te podrían ser de utilidad ahora o en los próximos días. 
+            Cuídate mucho y regresa cuando gustes ❤️😊. Cuenta conmigo siempre que lo necesites 🐶💕. 
 
 EXPLAIN_LIKERT:
     - MSG:
         - TEXT: |
-            Nuestra conversación ya está por finalizar, pero antes de que te deje descanzar  quisiera preguntarte, en estos momentos **¿qué tan fuerte** es tu malestar en una escala del _1_ al _10_?**
-            Tomando en cuenta que el **1** es un malestar muy bajo y el **10** es uno muy alto.
+            Ya estamos por terminar ❤️😊, pero antes de que nos despidamos quisiera preguntarte **¿qué tan fuerte** es tu malestar en una escala del _1_ al _10_?** 
+            Escribe el número que más te represente tomando en cuenta que el **1** es un malestar muy bajo y el **10** es uno muy alto.
+            

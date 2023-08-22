@@ -1,8 +1,8 @@
 strategies:
     mensajeFinDir:
-      - say "Ponte en contacto con quien necesites ☎️  y recuerda que puedes reentrenar la respiración conmigo si así lo deseas o acceder a información importante sobre los síntomas que puedes presentar 😊. Cuenta conmigo siempre 🐶❤️."
+      - say "No dudes en ponerte en contacto con quien necesites. Recuerda que también puedes practicar el reentrenamiento de la respiración conmigo y acceder a información importante sobre los síntomas que podrías experimentar 😊. Toda la información está en mi menú. Cuenta conmigo siempre 🐶❤️."
 
 script:
-  - say "Te voy brindar un directorio con números de emergencia ☎️ que te podrían ser de utilidad para resolver tus necesidades urgentes o puedes usarlo más adelante para cualquier situación que se presente. Encontrarás en el directorio líneas telefónicas donde te pueden brindar una atención psicológica o médica las 24 horas del día. Te recomiedno tomarles una captura de pantalla o anotarlos. Aunque estarán disponibles para ti todo el tiempo en mi menú 😊."
+  - say "Te voy brindar un directorio con números de emergencia ☎️ que te podrán ser de utilidad para resolver tus necesidades presentes o futuras.  Encontrarás en él líneas telefónicas donde te pueden brindar atención vial, médica y psicológica las 24 horas del día ❤️📞😊. Siéntete en la confianza de guardar el directorio."
   - say DIRECTORIO
   - if opcion==3 then solve mensajeFinDir

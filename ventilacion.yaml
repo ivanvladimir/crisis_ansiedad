@@ -5,7 +5,9 @@ slots:
   - respiracion
 strategies:
   respiracion:
-    - say "La forma como respiramos influye en nuestras emociones, por lo que si controlamos nuestra respiración 🫁 nos podemos sentir mejor 👌👍. Yo te puedo ayudar a que te sientas más tranquil@. **¿Te gustaría intentarlo?** Esta técnica podría ayudarte a sentirte mejor en los próximos días también 💙."
+    - say "El siguiente ejercicio de re-entrenamiento de la respiración es una buena opción para relajarnos 💕🫁."
+    - say "Sin embargo, si presentas algún problema respiratorio que te impida realizarlo, es mejor que no lo practiques 😊. **¿Intentamos el ejercicio?**."
+    - say "Escribe Si o No."
     - input respiracion | yesno
 script:
   - say INI_VENTILACION

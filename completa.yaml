@@ -12,7 +12,7 @@ strategies:
 
   sentirMal:
     - say PRIMERO
-    - say "**¿Te gustaría platicarme qué te está haciendo sentir mal?**"
+    - say "**¿Te gustaría platicarme qué te está generando malestar?**"
     - say 'Escribe Si o No'
     - input sentirMal | yesno
 
@@ -20,5 +20,5 @@ script:
   - solve saludo
   - solve sentirMal
   - if sentirMal == True then solve escuchaActiva
-  - if sentirMal == False then say "Entiendo, no te preocupes 😊"
+  - if sentirMal == False then say "Entiendo, muy bien 😊."
   - if sentirMal == False then solve ventilacion
