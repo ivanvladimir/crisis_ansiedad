@@ -15,5 +15,5 @@ strategies:
 script:
   - solve intro
   - solve necesidad
-  - if respiracion == True then solve necesidadSi
-  - if respiracion == False then solve necesidadNo
+  - if necesidad == True then solve necesidadSi
+  - if necesidad == False then solve necesidadNo

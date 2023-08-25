@@ -27,7 +27,7 @@ strategies:
     - say "Lo estás haciendo muy bien {} 💙👏".format(username)
     - say "**¿Existe algo más que necesites justo ahora?**"
     - say "Escribe Si o No"
-    - input otra |yesno
+    - input otra2 |yesno
   preocupacion3:
     - say "Muy bien, ¿qué otra cosa necesitas?"
     - input preocupacion3

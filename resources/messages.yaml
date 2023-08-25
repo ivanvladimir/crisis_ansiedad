@@ -11,10 +11,11 @@ VIDEO:
 MENU:
     - MSG:
         - TEXT: |
-            ¿Cómo te puedo ayudar el día de hoy? 😊
-            1: Primeros Auxilios Psicológicos (intervención completa) 
-            2: Reentrenamiento de la respiración
-            3: Derivación: Directorio
+            ¿Cómo te puedo ayudar el día de hoy? 😊 
+
+            1: Primeros Auxilios Psicológicos (_intervención completa_)</br> 
+            2: Reentrenamiento de la respiración</br>
+            3: Derivación: Directorio</br>
             4: Psico-educación: Información sobre los síntomas
 
             Ingresa el número de la opcion deseada
@@ -68,8 +69,44 @@ DIRECTORIO:
             Es importante para mí que tengas este directorio con números de emergencia que pueden serte útiles para atender cualquier necesidad presente o futura 📞. 
             En él,  encontrarás líneas telefónicas donde pueden brindarte ayuda médica, asistencia vial y apoyo psicológico las 24 horas del día ❤️🧠. 
             Te recomiendo guardar la imagen o anotar los números, aunque también estarán disponibles para ti en cualquier momento en mi menú  🐶💕.
-            
+        - TEXT: |
+            <img width="480" src="/cv/static/img/directorio.png">
+            </img>
+            <hr>
+            <a type="button" class="btn btn-success" href="/cv/static/img/directorio.png" download>Descargar</a>
 
+
+SINTOMAS:
+    - MSG:
+        - TEXT: |
+            <img width="480" src="/cv/static/img/sintomas1.png">
+            </img>
+            <hr>
+            <a type="button" class="btn btn-success" href="/cv/static/img/sintomas1.png" download>Descargar</a>
+        - TEXT: |
+            <img width="480" src="/cv/static/img/sintomas2.png">
+            </img>
+            <hr>
+            <a type="button" class="btn btn-success" href="/cv/static/img/sintomas2.png" download>Descargar</a>
+        - TEXT: |
+            <img width="480" src="/cv/static/img/sintomas3.png"<
+            </img>
+            <hr>
+            <a type="button" class="btn btn-success" href="/cv/static/img/sintomas3.png" download>Descargar</a>
+        - TEXT: |
+            <img width="480" src="/cv/static/img/sintomas4.png"<
+            </img>
+            <hr>
+            <a type="button" class="btn btn-success" href="/cv/static/img/sintomas4.png" download>Descargar</a>
+
+
+RECOMENDACIONES:
+    - MSG:
+        - TEXT: |
+            <img width="480" src="/cv/static/img/recomendaciones.png"
+            </img>
+            <hr>
+            <a type="button" class="btn btn-success" href="/cv/static/img/recomendaciones.png" download>Descargar</a>
 
 
 TERMINAR:

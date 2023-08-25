@@ -109,7 +109,7 @@ body {
 
 .messages .message.left .avatar {
 	float: left;
-	background: url('./img/bot.jpg');
+	background: url('./img/bot.png');
 }
 
 .messages .message.left .text_wrapper {
@@ -131,7 +131,7 @@ body {
 
 .messages .message.right .avatar {
 	float: right;
-	background: url('./img/guy.jpg');
+	background: url('./img/usuario.png');
 }
 
 .messages .message.right .text_wrapper {
