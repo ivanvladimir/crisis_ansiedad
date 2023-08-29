@@ -1,12 +1,10 @@
 VIDEO:
     - MSG:
         - TEXT: |
-            <iframe src="/cv/static/img/movie.mov"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+            <video width="480" autoplay controls>
+            <source src="/cv/static/img/movie.mov"
+                type="video/mp4">
+            </video>
 
 MENU:
     - MSG:
@@ -54,21 +52,15 @@ PRIMERO:
 INI_ESCUCHA_ACTIVA:
     - MSG:
         - TEXT: |
-            De acuerdo, ** por favor cuéntame qué te está haciendo sentir mal** . Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo leeré lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🐶❤️.
+            De acuerdo, **por favor cuéntame qué te está haciendo sentir mal** . Me gustaría tratar de entender cómo te sientes 😊. Recuerda que yo soy un agente virtual y solamente yo leeré lo que escribas. Nadie te va a juzgar. Conmigo tus pensamientos están seguros 🐶❤️.
 
 INI_VENTILACION:
     - MSG:
         - TEXT: |
-             <span style="color:tomato;">Tras un accidente de tránsito</span>, es normal experimentar malestar. 
-             - Podemos llegar a sentirnos confundidos, pensar que nos sobrepasa la situación o sentir nuestro corazón y respiración alterados ❤️🫁. 
-             - Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas más tranquil@ 😉.
+             <span style="color:tomato;">Tras un accidente de tránsito</span>, es normal experimentar malestar. Podemos llegar a sentirnos confundidos, pensar que nos sobrepasa la situación o sentir nuestro corazón y respiración alterados ❤️🫁. Pero no te preocupes, podemos trabajar en equipo e intentar que te sientas más tranquil@ 😉.
 
 DIRECTORIO:
     - MSG:
-        - TEXT: |
-            Es importante para mí que tengas este directorio con números de emergencia que pueden serte útiles para atender cualquier necesidad presente o futura 📞. 
-            En él,  encontrarás líneas telefónicas donde pueden brindarte ayuda médica, asistencia vial y apoyo psicológico las 24 horas del día ❤️🧠. 
-            Te recomiendo guardar la imagen o anotar los números, aunque también estarán disponibles para ti en cualquier momento en mi menú  🐶💕.
         - TEXT: |
             <img width="480" src="/cv/static/img/directorio.png">
             </img>
@@ -108,6 +100,13 @@ RECOMENDACIONES:
             <hr>
             <a type="button" class="btn btn-success" href="/cv/static/img/recomendaciones.png" download>Descargar</a>
 
+ALARMA:
+    - MSG:
+        - TEXT: |
+            <img width="480" src="/cv/static/img/senalesalarma.png"
+            </img>
+            <hr>
+            <a type="button" class="btn btn-success" href="/cv/static/img/senalesalarma.png" download>Descargar</a>
 
 TERMINAR:
     - MSG:

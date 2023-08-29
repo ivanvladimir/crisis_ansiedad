@@ -13,4 +13,4 @@ script:
   - say INI_VENTILACION
   - solve respiracion
   - if respiracion == True then solve respSi
-  - if respiracion == False then solve respNo
+  - if opcion==1 and respiracion == False then solve respNo

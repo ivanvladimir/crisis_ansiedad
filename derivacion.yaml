@@ -14,8 +14,9 @@ strategies:
     - say "Me parece una excelente idea que te pongas en contacto con {}. Contar con una red de apoyo en estas situaciones es benéfico para ayudarte a sentir mejor 💙👍.".format(familiar)
     - solve directorio
 
-  respNo:
+  respNo2:
     - say "Okay, no te preocupes. Pero si me lo permites, cuando te sientas list@ te recomiendo mantener el contacto con seres queridos. Se ha visto que ayuda mucho  el compartir tiempo con seres queridos 💕😊. "
+    - say DIRECTORIO
 
   querer:
     - say "Antes de terminar, me gustaría brindarte algunos consejos e información para los próximos días 😊❤️."
@@ -25,11 +26,10 @@ strategies:
 
   psicoeducacion:
     - solve psico_educacion
-    - say "medio" #solve eval
 
 script:
   - solve contacto
   - if contacto == True then solve familiar
-  - if contacto == False then solve respNo
+  - if contacto == False then solve respNo2
   - if opcion==1 then solve querer
   - if querer==False then say TERMINAR else solve psicoeducacion

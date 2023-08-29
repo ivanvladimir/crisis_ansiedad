@@ -52,11 +52,12 @@ strategies:
     - if opcion == 2 then solve ventilacion
     - if opcion == 3 then solve directorio
     - if opcion == 4 then solve psicoeducacion
+    - say "Regresa cuando gustes😊. Cuenta con Mar siempre que lo necesites, {} ❤️🐶❤️.".format(username)
+      #- say "Antes de que nos despidamos, quiero felicitarte por todo lo que lograste durante nuestro tiempo junt@s ❤️☺️"
+    - say "Cuídate mucho. Gracias por haber confiado en mi el día de hoy ❤️😄"
     - say "¿Quieres regresar al menu princial?"
     - input loop | yesno
 
 script:
   - set_slot loop True
   - while loop then solve main
-  - say "Cuídate mucho. Gracias por haber confiado en mi el día de hoy ❤️😄"
-  - say "Regresa cuando gustes😊. Cuenta con Mar siempre que lo necesites, {} ❤️🐶❤️.".format(username)
